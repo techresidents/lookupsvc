@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0                              http://maven.apache.org/maven-v4_0_0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.techresidents.services.lookupsvc</groupId>
+        <artifactId>lookupsvc-idl</artifactId>
+        <version>0.1-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>lookupsvc-idl-java</artifactId>
+    <packaging>jar</packaging>
+
+    <name>lookupsvc idl java</name>
+    <inceptionYear>2012</inceptionYear>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>create-thrift-source-directory</id>
+                        <phase>generate-sources</phase>
+                        <goals>
+                            <goal>exec</goal>
+                        </goals>
+                        <configuration>
+                            <executable>mkdir</executable>
+                            <arguments>
+                                <argument>-p</argument>
+                                <argument>${project.build.directory}/generated-sources/thrift</argument>
+                            </arguments>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>generate-thrift-source</id>
+                        <phase>generate-sources</phase>
+                        <goals>
+                            <goal>exec</goal>
+                        </goals>
+                        <configuration>
+                            <executable>thrift</executable>
+                            <arguments>
+                                <argument>-o</argument>
+                                <argument>${project.build.directory}/generated-sources/thrift</argument>
+                                <argument>-I</argument>
+                                <argument>${basedir}/../idl/target/generated-sources/idl-core</argument>
+                                <argument>--gen</argument>
+                                <argument>java</argument>
+                                <argument>${basedir}/../idl/lookupsvc.thrift</argument>
+                            </arguments>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>build-helper-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>add-thrift-source</id>
+                        <phase>generate-sources</phase>
+                        <goals>
+                          <goal>add-source</goal>
+                        </goals>
+                        <configuration>
+                            <sources>
+                                <source>target/generated-sources/thrift/gen-java</source>
+                            </sources>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+    <dependencies>
+
+        <!-- Internal dependencies -->
+
+        <dependency>
+            <groupId>com.techresidents.services.core.idl</groupId>
+            <artifactId>idl-core-java</artifactId>
+        </dependency>
+
+
+        <!-- Thridy party dependencies -->
+
+        <dependency>
+            <groupId>org.apache.thrift</groupId>
+            <artifactId>libthrift</artifactId>
+        </dependency>
+
+    </dependencies>
+
+</project>

@@ -1,0 +1,22 @@
+<assembly>
+  <id>bin</id>
+  <formats>
+    <format>tar.gz</format>
+  </formats>
+  <files>
+      <file>
+          <source>target/classes/setup.py</source>
+          <outputDirectory>/</outputDirectory>
+      </file>
+      <file>
+          <source>target/classes/PKG-INFO</source>
+          <outputDirectory>/</outputDirectory>
+      </file>
+  </files>
+  <fileSets>
+    <fileSet>
+      <directory>target/generated-sources/thrift/gen-py</directory>
+      <outputDirectory>/</outputDirectory>
+    </fileSet>
+  </fileSets>
+</assembly>

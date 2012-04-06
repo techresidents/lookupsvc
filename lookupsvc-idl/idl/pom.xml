@@ -1,0 +1,70 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                             http://maven.apache.org/maven-v4_0_0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.techresidents.services.lookupsvc</groupId>
+        <artifactId>lookupsvc-idl</artifactId>
+        <version>0.1-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>lookupsvc-idl-idl</artifactId>
+    <packaging>jar</packaging>
+
+    <name>idl-idl</name>
+    <inceptionYear>2012</inceptionYear>
+
+    <properties>
+    </properties>
+
+    <build>
+        <!-- Populate setup.py placeholders -->
+        <resources>
+            <resource>
+                <directory>${basedir}</directory>
+                <filtering>false</filtering>
+                <includes>
+                    <include>**/*.thrift</include>
+                </includes>
+            </resource>
+        </resources>
+
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-dependency-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>unpack-core-idl</id>
+                        <phase>generate-sources</phase>
+                        <goals>
+                            <goal>unpack</goal>
+                        </goals>
+                        <configuration>
+                            <artifactItems>
+                                <artifactItem>
+                                    <groupId>com.techresidents.services.core.idl</groupId>
+                                    <artifactId>idl-core-idl</artifactId>
+                                    <outputDirectory>${project.build.directory}/generated-sources/idl-core</outputDirectory>
+                                    <includes>**/*.thrift</includes>
+                                </artifactItem>
+                            </artifactItems>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+
+    </build>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.techresidents.services.core.idl</groupId>
+            <artifactId>idl-core-idl</artifactId>
+        </dependency>
+    </dependencies>
+
+</project>

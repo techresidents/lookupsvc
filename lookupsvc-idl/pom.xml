@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0                              http://maven.apache.org/maven-v4_0_0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.techresidents.services.core.java</groupId>
+        <artifactId>services-pom</artifactId>
+        <version>0.3.0</version>
+    </parent>
+
+    <groupId>com.techresidents.services.lookupsvc</groupId>
+    <artifactId>lookupsvc-idl</artifactId>
+    <version>0.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <name>lookupsvc idl</name>
+    <inceptionYear>2012</inceptionYear>
+
+    <scm>
+        <connection>scm:git:git://dev.30and30.com/30and30/repos/techresidents/services/lookupsvc.git</connection>
+        <developerConnection>scm:git:git://dev.30and30.com/30and30/repos/techresidents/services/lookupsvc.git</developerConnection>
+        <url>scm:git:git://dev.30and30.com/30and30/repos/techresidents/services/lookupsvc.git</url>
+    </scm>
+
+    <profiles>
+        <profile>
+            <id>default</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.codehaus.mojo</groupId>
+                        <artifactId>buildnumber-maven-plugin</artifactId>
+                        <inherited>true</inherited>
+                        <executions>
+                            <execution>
+                                <phase>validate</phase>
+                                <goals>
+                                    <goal>create</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                        <configuration>
+                            <format>{0,date,yyyyMMdd-HH:mm:ss}</format>
+                            <items>
+                                <item>timestamp</item>
+                            </items>
+                            <doCheck>false</doCheck>
+                            <doUpdate>false</doUpdate>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+        <profile>
+            <id>release</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.codehaus.mojo</groupId>
+                        <artifactId>buildnumber-maven-plugin</artifactId>
+                        <inherited>true</inherited>
+                        <executions>
+                            <execution>
+                                <phase>validate</phase>
+                                <goals>
+                                    <goal>create</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                        <configuration>
+                            <doCheck>false</doCheck>
+                            <doUpdate>false</doUpdate>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+
+    </profiles>
+
+  <modules>
+    <module>idl</module>
+    <module>idl-java</module>
+    <module>idl-python</module>
+  </modules>
+</project>
