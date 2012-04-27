@@ -1,0 +1,18 @@
+#!/bin/bash
+
+if [ $# -ne 1 ]
+then
+    echo "Usage: `basename $0` [localdev|integration|staging|prod]"
+    exit 1
+fi
+
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+PYTHON="/usr/bin/env python"
+
+if [ -d $DIR/../env ]
+then
+    PYTHON="$DIR/../env/bin/python"
+fi
+
+. /opt/30and30/etc/profile
+$PYTHON $DIR/../manager.py --env $1 stop

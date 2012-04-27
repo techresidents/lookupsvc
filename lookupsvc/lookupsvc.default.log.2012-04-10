@@ -1,0 +1,175 @@
+2012-04-10 11:08:07,632 INFO: trpycore.zookeeper_gevent.client Starting GZookeeperClient ...
+2012-04-10 11:08:07,881 WARNING: trsvcscore.registrar.zookeeper.ZookeeperServiceRegistrar Registartion for lookupsvc deferred: Zookeeper client not connected
+2012-04-10 11:08:07,881 INFO: trpycore.zookeeper_gevent.client GZookeeperClient started.
+2012-04-10 11:08:07,891 INFO: trsvcscore.registrar.zookeeper.ZookeeperServiceRegistrar Registration for lookupsvc completed
+2012-04-10 11:08:12,224 INFO: trpycore.zookeeper_gevent.client Stopping GZookeeperClient ...
+2012-04-10 11:08:12,224 INFO: trpycore.zookeeper_gevent.client GZookeeperClient stopped.
+2012-04-10 11:13:34,293 INFO: trpycore.zookeeper_gevent.client Starting GZookeeperClient ...
+2012-04-10 11:13:34,506 WARNING: trsvcscore.registrar.zookeeper.ZookeeperServiceRegistrar Registartion for lookupsvc deferred: Zookeeper client not connected
+2012-04-10 11:13:34,507 INFO: trpycore.zookeeper_gevent.client GZookeeperClient started.
+2012-04-10 11:13:34,512 INFO: trsvcscore.registrar.zookeeper.ZookeeperServiceRegistrar Registration for lookupsvc completed
+2012-04-10 11:13:40,295 INFO: trpycore.zookeeper_gevent.client Stopping GZookeeperClient ...
+2012-04-10 11:13:40,295 INFO: trpycore.zookeeper_gevent.client GZookeeperClient stopped.
+2012-04-10 11:14:40,779 INFO: trpycore.zookeeper_gevent.client Starting GZookeeperClient ...
+2012-04-10 11:14:40,780 WARNING: trsvcscore.registrar.zookeeper.ZookeeperServiceRegistrar Registartion for lookupsvc deferred: Zookeeper client not connected
+2012-04-10 11:14:40,780 INFO: trpycore.zookeeper_gevent.client GZookeeperClient started.
+2012-04-10 11:14:40,786 INFO: trsvcscore.registrar.zookeeper.ZookeeperServiceRegistrar Registration for lookupsvc completed
+2012-04-10 11:14:46,525 INFO: trpycore.zookeeper_gevent.client Stopping GZookeeperClient ...
+2012-04-10 11:14:46,526 INFO: trpycore.zookeeper_gevent.client GZookeeperClient stopped.
+2012-04-10 11:28:45,138 INFO: trpycore.zookeeper_gevent.client Starting GZookeeperClient ...
+2012-04-10 11:28:45,294 WARNING: trsvcscore.registrar.zookeeper.ZookeeperServiceRegistrar Registartion for lookupsvc deferred: Zookeeper client not connected
+2012-04-10 11:28:45,295 INFO: trpycore.zookeeper_gevent.client GZookeeperClient started.
+2012-04-10 11:28:45,301 INFO: trsvcscore.registrar.zookeeper.ZookeeperServiceRegistrar Registration for lookupsvc completed
+2012-04-10 11:28:53,192 INFO: trpycore.zookeeper_gevent.client Stopping GZookeeperClient ...
+2012-04-10 11:28:53,193 INFO: trpycore.zookeeper_gevent.client GZookeeperClient stopped.
+2012-04-10 11:29:04,773 INFO: trpycore.zookeeper_gevent.client Starting GZookeeperClient ...
+2012-04-10 11:29:04,781 WARNING: trsvcscore.registrar.zookeeper.ZookeeperServiceRegistrar Registartion for lookupsvc deferred: Zookeeper client not connected
+2012-04-10 11:29:04,781 INFO: trpycore.zookeeper_gevent.client GZookeeperClient started.
+2012-04-10 11:29:04,794 INFO: trsvcscore.registrar.zookeeper.ZookeeperServiceRegistrar Registration for lookupsvc completed
+2012-04-10 11:43:26,789 INFO: trpycore.zookeeper_gevent.client Stopping GZookeeperClient ...
+2012-04-10 11:43:26,790 INFO: trpycore.zookeeper_gevent.client GZookeeperClient stopped.
+2012-04-10 11:45:07,004 INFO: trpycore.zookeeper_gevent.client Starting GZookeeperClient ...
+2012-04-10 11:45:07,228 WARNING: trsvcscore.registrar.zookeeper.ZookeeperServiceRegistrar Registartion for lookupsvc deferred: Zookeeper client not connected
+2012-04-10 11:45:07,229 INFO: trpycore.zookeeper_gevent.client GZookeeperClient started.
+2012-04-10 11:45:07,234 INFO: trsvcscore.registrar.zookeeper.ZookeeperServiceRegistrar Registration for lookupsvc completed
+2012-04-10 11:45:09,536 INFO: trpycore.zookeeper_gevent.client Stopping GZookeeperClient ...
+2012-04-10 11:45:09,536 INFO: trpycore.zookeeper_gevent.client GZookeeperClient stopped.
+2012-04-10 11:46:29,728 INFO: trpycore.zookeeper_gevent.client Starting GZookeeperClient ...
+2012-04-10 11:46:29,730 WARNING: trsvcscore.registrar.zookeeper.ZookeeperServiceRegistrar Registartion for lookupsvc deferred: Zookeeper client not connected
+2012-04-10 11:46:29,730 INFO: trpycore.zookeeper_gevent.client GZookeeperClient started.
+2012-04-10 11:46:29,775 INFO: trsvcscore.registrar.zookeeper.ZookeeperServiceRegistrar Registration for lookupsvc completed
+2012-04-10 11:46:31,211 INFO: trpycore.zookeeper_gevent.client Stopping GZookeeperClient ...
+2012-04-10 11:46:31,212 INFO: trpycore.zookeeper_gevent.client GZookeeperClient stopped.
+2012-04-10 11:50:43,352 INFO: trpycore.zookeeper_gevent.client Starting GZookeeperClient ...
+2012-04-10 11:50:43,482 WARNING: trsvcscore.registrar.zookeeper.ZookeeperServiceRegistrar Registartion for lookupsvc deferred: Zookeeper client not connected
+2012-04-10 11:50:43,483 INFO: trpycore.zookeeper_gevent.client GZookeeperClient started.
+2012-04-10 11:50:43,489 INFO: trsvcscore.registrar.zookeeper.ZookeeperServiceRegistrar Registration for lookupsvc completed
+2012-04-10 11:50:46,204 INFO: trpycore.zookeeper_gevent.client Stopping GZookeeperClient ...
+2012-04-10 11:50:46,205 INFO: trpycore.zookeeper_gevent.client GZookeeperClient stopped.
+2012-04-10 11:51:30,689 INFO: trpycore.zookeeper_gevent.client Starting GZookeeperClient ...
+2012-04-10 11:51:30,691 WARNING: trsvcscore.registrar.zookeeper.ZookeeperServiceRegistrar Registartion for lookupsvc deferred: Zookeeper client not connected
+2012-04-10 11:51:30,691 INFO: trpycore.zookeeper_gevent.client GZookeeperClient started.
+2012-04-10 11:51:30,696 INFO: trsvcscore.registrar.zookeeper.ZookeeperServiceRegistrar Registration for lookupsvc completed
+2012-04-10 11:51:40,408 INFO: trpycore.zookeeper_gevent.client Stopping GZookeeperClient ...
+2012-04-10 11:51:40,408 INFO: trpycore.zookeeper_gevent.client GZookeeperClient stopped.
+2012-04-10 11:57:19,184 INFO: root LocationLookup created.
+2012-04-10 11:57:19,184 INFO: root TagLookup created.
+2012-04-10 11:57:19,184 INFO: trpycore.zookeeper_gevent.client Starting GZookeeperClient ...
+2012-04-10 11:57:19,313 WARNING: trsvcscore.registrar.zookeeper.ZookeeperServiceRegistrar Registartion for lookupsvc deferred: Zookeeper client not connected
+2012-04-10 11:57:19,314 INFO: trpycore.zookeeper_gevent.client GZookeeperClient started.
+2012-04-10 11:57:19,319 INFO: trsvcscore.registrar.zookeeper.ZookeeperServiceRegistrar Registration for lookupsvc completed
+2012-04-10 11:57:27,605 INFO: trpycore.zookeeper_gevent.client Stopping GZookeeperClient ...
+2012-04-10 11:57:27,606 INFO: trpycore.zookeeper_gevent.client GZookeeperClient stopped.
+2012-04-10 12:01:36,808 INFO: root LocationLookup created.
+2012-04-10 12:01:36,808 INFO: root TagLookup created.
+2012-04-10 12:01:36,808 INFO: root LocationLookup loaded.
+2012-04-10 12:01:36,808 INFO: root TagLookup loaded.
+2012-04-10 12:01:36,808 INFO: trpycore.zookeeper_gevent.client Starting GZookeeperClient ...
+2012-04-10 12:01:36,933 WARNING: trsvcscore.registrar.zookeeper.ZookeeperServiceRegistrar Registartion for lookupsvc deferred: Zookeeper client not connected
+2012-04-10 12:01:36,933 INFO: trpycore.zookeeper_gevent.client GZookeeperClient started.
+2012-04-10 12:01:36,939 INFO: trsvcscore.registrar.zookeeper.ZookeeperServiceRegistrar Registration for lookupsvc completed
+2012-04-10 12:01:39,167 INFO: trpycore.zookeeper_gevent.client Stopping GZookeeperClient ...
+2012-04-10 12:01:39,168 INFO: trpycore.zookeeper_gevent.client GZookeeperClient stopped.
+2012-04-10 12:12:25,116 INFO: handler LocationLookup created.
+2012-04-10 12:12:25,116 INFO: handler TagLookup created.
+2012-04-10 12:12:25,116 INFO: root LocationLookup loaded.
+2012-04-10 12:12:25,116 INFO: root TagLookup loaded.
+2012-04-10 12:12:25,116 INFO: trpycore.zookeeper_gevent.client Starting GZookeeperClient ...
+2012-04-10 12:12:25,269 WARNING: trsvcscore.registrar.zookeeper.ZookeeperServiceRegistrar Registartion for lookupsvc deferred: Zookeeper client not connected
+2012-04-10 12:12:25,270 INFO: trpycore.zookeeper_gevent.client GZookeeperClient started.
+2012-04-10 12:12:25,275 INFO: trsvcscore.registrar.zookeeper.ZookeeperServiceRegistrar Registration for lookupsvc completed
+2012-04-10 12:12:26,314 INFO: trpycore.zookeeper_gevent.client Stopping GZookeeperClient ...
+2012-04-10 12:12:26,315 INFO: trpycore.zookeeper_gevent.client GZookeeperClient stopped.
+2012-04-10 12:14:28,763 INFO: handler.LookupServiceHandler LocationLookup created.
+2012-04-10 12:14:28,763 INFO: handler.LookupServiceHandler TagLookup created.
+2012-04-10 12:14:28,763 INFO: handler.LookupServiceHandler LocationLookup loaded.
+2012-04-10 12:14:28,763 INFO: handler.LookupServiceHandler TagLookup loaded.
+2012-04-10 12:14:28,763 INFO: trpycore.zookeeper_gevent.client Starting GZookeeperClient ...
+2012-04-10 12:14:28,889 WARNING: trsvcscore.registrar.zookeeper.ZookeeperServiceRegistrar Registartion for lookupsvc deferred: Zookeeper client not connected
+2012-04-10 12:14:28,890 INFO: trpycore.zookeeper_gevent.client GZookeeperClient started.
+2012-04-10 12:14:28,895 INFO: trsvcscore.registrar.zookeeper.ZookeeperServiceRegistrar Registration for lookupsvc completed
+2012-04-10 12:14:32,247 INFO: trpycore.zookeeper_gevent.client Stopping GZookeeperClient ...
+2012-04-10 12:14:32,247 INFO: trpycore.zookeeper_gevent.client GZookeeperClient stopped.
+2012-04-10 19:51:26,715 INFO: handler.LookupServiceHandler LocationLookup created.
+2012-04-10 19:51:26,715 INFO: handler.LookupServiceHandler TagLookup created.
+2012-04-10 19:51:26,715 INFO: handler.LookupServiceHandler LocationLookup loaded.
+2012-04-10 19:51:26,715 INFO: handler.LookupServiceHandler TagLookup loaded.
+2012-04-10 19:51:26,715 INFO: trpycore.zookeeper_gevent.client Starting GZookeeperClient ...
+2012-04-10 19:51:26,863 WARNING: trsvcscore.registrar.zookeeper.ZookeeperServiceRegistrar Registartion for lookupsvc deferred: Zookeeper client not connected
+2012-04-10 19:51:26,863 INFO: trpycore.zookeeper_gevent.client GZookeeperClient started.
+2012-04-10 19:51:26,873 INFO: trsvcscore.registrar.zookeeper.ZookeeperServiceRegistrar Registration for lookupsvc completed
+2012-04-10 19:51:31,643 INFO: trpycore.zookeeper_gevent.client Stopping GZookeeperClient ...
+2012-04-10 19:51:31,643 INFO: trpycore.zookeeper_gevent.client GZookeeperClient stopped.
+2012-04-10 19:57:03,129 INFO: handler.LookupServiceHandler LocationLookup created.
+2012-04-10 19:57:03,129 INFO: handler.LookupServiceHandler TagLookup created.
+2012-04-10 19:57:03,129 INFO: handler.LookupServiceHandler LocationLookup loaded.
+2012-04-10 19:57:03,129 INFO: handler.LookupServiceHandler TagLookup loaded.
+2012-04-10 19:57:03,129 INFO: trpycore.zookeeper_gevent.client Starting GZookeeperClient ...
+2012-04-10 19:57:03,284 WARNING: trsvcscore.registrar.zookeeper.ZookeeperServiceRegistrar Registartion for lookupsvc deferred: Zookeeper client not connected
+2012-04-10 19:57:03,284 INFO: trpycore.zookeeper_gevent.client GZookeeperClient started.
+2012-04-10 19:57:03,290 INFO: trsvcscore.registrar.zookeeper.ZookeeperServiceRegistrar Registration for lookupsvc completed
+2012-04-10 20:03:13,825 INFO: trpycore.zookeeper_gevent.client Stopping GZookeeperClient ...
+2012-04-10 20:03:13,825 INFO: trpycore.zookeeper_gevent.client GZookeeperClient stopped.
+2012-04-10 20:03:32,417 INFO: handler.LookupServiceHandler LocationLookup created.
+2012-04-10 20:03:32,417 INFO: handler.LookupServiceHandler TagLookup created.
+2012-04-10 20:03:32,417 INFO: handler.LookupServiceHandler LocationLookup loaded.
+2012-04-10 20:03:32,418 INFO: handler.LookupServiceHandler TagLookup loaded.
+2012-04-10 20:03:32,418 INFO: trpycore.zookeeper_gevent.client Starting GZookeeperClient ...
+2012-04-10 20:03:32,635 WARNING: trsvcscore.registrar.zookeeper.ZookeeperServiceRegistrar Registartion for lookupsvc deferred: Zookeeper client not connected
+2012-04-10 20:03:32,636 INFO: trpycore.zookeeper_gevent.client GZookeeperClient started.
+2012-04-10 20:03:32,641 INFO: trsvcscore.registrar.zookeeper.ZookeeperServiceRegistrar Registration for lookupsvc completed
+2012-04-10 20:09:05,839 INFO: trpycore.zookeeper_gevent.client Stopping GZookeeperClient ...
+2012-04-10 20:09:05,839 INFO: trpycore.zookeeper_gevent.client GZookeeperClient stopped.
+2012-04-10 20:09:32,912 INFO: handler.LookupServiceHandler LocationLookup created.
+2012-04-10 20:09:32,912 INFO: handler.LookupServiceHandler TagLookup created.
+2012-04-10 20:09:32,912 INFO: handler.LookupServiceHandler LocationLookup loaded.
+2012-04-10 20:09:32,912 INFO: handler.LookupServiceHandler TagLookup loaded.
+2012-04-10 20:09:32,913 INFO: trpycore.zookeeper_gevent.client Starting GZookeeperClient ...
+2012-04-10 20:09:32,914 WARNING: trsvcscore.registrar.zookeeper.ZookeeperServiceRegistrar Registartion for lookupsvc deferred: Zookeeper client not connected
+2012-04-10 20:09:32,914 INFO: trpycore.zookeeper_gevent.client GZookeeperClient started.
+2012-04-10 20:09:32,919 INFO: trsvcscore.registrar.zookeeper.ZookeeperServiceRegistrar Registration for lookupsvc completed
+2012-04-10 20:09:56,160 INFO: trpycore.zookeeper_gevent.client Stopping GZookeeperClient ...
+2012-04-10 20:09:56,161 INFO: trpycore.zookeeper_gevent.client GZookeeperClient stopped.
+2012-04-10 20:11:09,402 INFO: handler.LookupServiceHandler LocationLookup created.
+2012-04-10 20:11:09,403 INFO: handler.LookupServiceHandler TagLookup created.
+2012-04-10 20:11:09,403 INFO: handler.LookupServiceHandler LocationLookup loaded.
+2012-04-10 20:11:09,403 INFO: handler.LookupServiceHandler TagLookup loaded.
+2012-04-10 20:11:09,403 INFO: trpycore.zookeeper_gevent.client Starting GZookeeperClient ...
+2012-04-10 20:11:09,558 WARNING: trsvcscore.registrar.zookeeper.ZookeeperServiceRegistrar Registartion for lookupsvc deferred: Zookeeper client not connected
+2012-04-10 20:11:09,559 INFO: trpycore.zookeeper_gevent.client GZookeeperClient started.
+2012-04-10 20:11:09,564 INFO: trsvcscore.registrar.zookeeper.ZookeeperServiceRegistrar Registration for lookupsvc completed
+2012-04-10 20:11:23,696 INFO: trpycore.zookeeper_gevent.client Stopping GZookeeperClient ...
+2012-04-10 20:11:23,697 INFO: trpycore.zookeeper_gevent.client GZookeeperClient stopped.
+2012-04-10 20:11:37,199 INFO: handler.LookupServiceHandler LocationLookup created.
+2012-04-10 20:11:37,199 INFO: handler.LookupServiceHandler TagLookup created.
+2012-04-10 20:11:37,199 INFO: handler.LookupServiceHandler LocationLookup loaded.
+2012-04-10 20:11:37,199 INFO: handler.LookupServiceHandler TagLookup loaded.
+2012-04-10 20:11:37,199 INFO: trpycore.zookeeper_gevent.client Starting GZookeeperClient ...
+2012-04-10 20:11:37,201 WARNING: trsvcscore.registrar.zookeeper.ZookeeperServiceRegistrar Registartion for lookupsvc deferred: Zookeeper client not connected
+2012-04-10 20:11:37,201 INFO: trpycore.zookeeper_gevent.client GZookeeperClient started.
+2012-04-10 20:11:37,206 INFO: trsvcscore.registrar.zookeeper.ZookeeperServiceRegistrar Registration for lookupsvc completed
+2012-04-10 20:11:41,399 ERROR: root cannot convert argument to integer
+Traceback (most recent call last):
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trpycore/trpycore/thrift_gevent/server.py", line 38, in handle
+    self.processor.process(iprot, oprot)
+  File "/Users/jmullins/.virtualenvs/lookupsvc/lib/python2.7/site-packages/trlookupsvc/gen/TLookupService.py", line 89, in process
+    self._processMap[name](self, seqid, iprot, oprot)
+  File "/Users/jmullins/.virtualenvs/lookupsvc/lib/python2.7/site-packages/trlookupsvc/gen/TLookupService.py", line 99, in process_lookup
+    result.write(oprot)
+  File "/Users/jmullins/.virtualenvs/lookupsvc/lib/python2.7/site-packages/trlookupsvc/gen/TLookupService.py", line 249, in write
+    iter15.write(oprot)
+  File "/Users/jmullins/.virtualenvs/lookupsvc/lib/python2.7/site-packages/trlookupsvc/gen/ttypes.py", line 102, in write
+    oprot.writeI32(self.id)
+  File "/Users/jmullins/.virtualenvs/lookupsvc/lib/python2.7/site-packages/thrift/protocol/TBinaryProtocol.py", line 110, in writeI32
+    buff = pack("!i", i32)
+error: cannot convert argument to integer
+2012-04-10 20:11:57,300 INFO: trpycore.zookeeper_gevent.client Stopping GZookeeperClient ...
+2012-04-10 20:11:57,301 INFO: trpycore.zookeeper_gevent.client GZookeeperClient stopped.
+2012-04-10 20:12:13,581 INFO: handler.LookupServiceHandler LocationLookup created.
+2012-04-10 20:12:13,582 INFO: handler.LookupServiceHandler TagLookup created.
+2012-04-10 20:12:13,582 INFO: handler.LookupServiceHandler LocationLookup loaded.
+2012-04-10 20:12:13,582 INFO: handler.LookupServiceHandler TagLookup loaded.
+2012-04-10 20:12:13,582 INFO: trpycore.zookeeper_gevent.client Starting GZookeeperClient ...
+2012-04-10 20:12:13,584 WARNING: trsvcscore.registrar.zookeeper.ZookeeperServiceRegistrar Registartion for lookupsvc deferred: Zookeeper client not connected
+2012-04-10 20:12:13,584 INFO: trpycore.zookeeper_gevent.client GZookeeperClient started.
+2012-04-10 20:12:13,590 INFO: trsvcscore.registrar.zookeeper.ZookeeperServiceRegistrar Registration for lookupsvc completed

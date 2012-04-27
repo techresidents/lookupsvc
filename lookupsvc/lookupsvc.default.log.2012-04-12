@@ -1,0 +1,736 @@
+2012-04-12 09:17:48,107 ERROR: root 'query'
+Traceback (most recent call last):
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trsvcscore/trsvcscore/service_gevent/handler.py", line 291, in handle
+    response = handler(request, **match.groupdict())
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trsvcscore/trsvcscore/mongrel2/decorator.py", line 22, in check
+    return func(self, request, session, **kwargs)
+  File "/Users/jmullins/dev/30and30/techresidents/services/lookupsvc/lookupsvc/handler.py", line 86, in handle_lookup
+    query = request.param("query")
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trpycore/trpycore/mongrel2_common/request.py", line 119, in param
+    return self.url_param(name, escape)
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trpycore/trpycore/mongrel2_common/request.py", line 133, in url_param
+    value = self.url_params[name][0]
+KeyError: 'query'
+2012-04-12 09:17:54,052 ERROR: root 'query'
+Traceback (most recent call last):
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trsvcscore/trsvcscore/service_gevent/handler.py", line 291, in handle
+    response = handler(request, **match.groupdict())
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trsvcscore/trsvcscore/mongrel2/decorator.py", line 22, in check
+    return func(self, request, session, **kwargs)
+  File "/Users/jmullins/dev/30and30/techresidents/services/lookupsvc/lookupsvc/handler.py", line 86, in handle_lookup
+    query = request.param("query")
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trpycore/trpycore/mongrel2_common/request.py", line 119, in param
+    return self.url_param(name, escape)
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trpycore/trpycore/mongrel2_common/request.py", line 133, in url_param
+    value = self.url_params[name][0]
+KeyError: 'query'
+2012-04-12 09:18:12,822 ERROR: root 'query'
+Traceback (most recent call last):
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trsvcscore/trsvcscore/service_gevent/handler.py", line 291, in handle
+    response = handler(request, **match.groupdict())
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trsvcscore/trsvcscore/mongrel2/decorator.py", line 22, in check
+    return func(self, request, session, **kwargs)
+  File "/Users/jmullins/dev/30and30/techresidents/services/lookupsvc/lookupsvc/handler.py", line 86, in handle_lookup
+    query = request.param("query")
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trpycore/trpycore/mongrel2_common/request.py", line 119, in param
+    return self.url_param(name, escape)
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trpycore/trpycore/mongrel2_common/request.py", line 133, in url_param
+    value = self.url_params[name][0]
+KeyError: 'query'
+2012-04-12 09:18:15,546 ERROR: root 'query'
+Traceback (most recent call last):
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trsvcscore/trsvcscore/service_gevent/handler.py", line 291, in handle
+    response = handler(request, **match.groupdict())
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trsvcscore/trsvcscore/mongrel2/decorator.py", line 22, in check
+    return func(self, request, session, **kwargs)
+  File "/Users/jmullins/dev/30and30/techresidents/services/lookupsvc/lookupsvc/handler.py", line 86, in handle_lookup
+    query = request.param("query")
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trpycore/trpycore/mongrel2_common/request.py", line 119, in param
+    return self.url_param(name, escape)
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trpycore/trpycore/mongrel2_common/request.py", line 133, in url_param
+    value = self.url_params[name][0]
+KeyError: 'query'
+2012-04-12 09:21:30,398 ERROR: root 'query'
+Traceback (most recent call last):
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trsvcscore/trsvcscore/service_gevent/handler.py", line 291, in handle
+    response = handler(request, **match.groupdict())
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trsvcscore/trsvcscore/mongrel2/decorator.py", line 22, in check
+    return func(self, request, session, **kwargs)
+  File "/Users/jmullins/dev/30and30/techresidents/services/lookupsvc/lookupsvc/handler.py", line 86, in handle_lookup
+    query = request.param("query")
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trpycore/trpycore/mongrel2_common/request.py", line 119, in param
+    return self.url_param(name, escape)
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trpycore/trpycore/mongrel2_common/request.py", line 133, in url_param
+    value = self.url_params[name][0]
+KeyError: 'query'
+2012-04-12 09:21:31,657 ERROR: root 'query'
+Traceback (most recent call last):
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trsvcscore/trsvcscore/service_gevent/handler.py", line 291, in handle
+    response = handler(request, **match.groupdict())
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trsvcscore/trsvcscore/mongrel2/decorator.py", line 22, in check
+    return func(self, request, session, **kwargs)
+  File "/Users/jmullins/dev/30and30/techresidents/services/lookupsvc/lookupsvc/handler.py", line 86, in handle_lookup
+    query = request.param("query")
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trpycore/trpycore/mongrel2_common/request.py", line 119, in param
+    return self.url_param(name, escape)
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trpycore/trpycore/mongrel2_common/request.py", line 133, in url_param
+    value = self.url_params[name][0]
+KeyError: 'query'
+2012-04-12 09:21:32,232 ERROR: root 'query'
+Traceback (most recent call last):
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trsvcscore/trsvcscore/service_gevent/handler.py", line 291, in handle
+    response = handler(request, **match.groupdict())
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trsvcscore/trsvcscore/mongrel2/decorator.py", line 22, in check
+    return func(self, request, session, **kwargs)
+  File "/Users/jmullins/dev/30and30/techresidents/services/lookupsvc/lookupsvc/handler.py", line 86, in handle_lookup
+    query = request.param("query")
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trpycore/trpycore/mongrel2_common/request.py", line 119, in param
+    return self.url_param(name, escape)
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trpycore/trpycore/mongrel2_common/request.py", line 133, in url_param
+    value = self.url_params[name][0]
+KeyError: 'query'
+2012-04-12 09:21:32,876 ERROR: root 'query'
+Traceback (most recent call last):
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trsvcscore/trsvcscore/service_gevent/handler.py", line 291, in handle
+    response = handler(request, **match.groupdict())
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trsvcscore/trsvcscore/mongrel2/decorator.py", line 22, in check
+    return func(self, request, session, **kwargs)
+  File "/Users/jmullins/dev/30and30/techresidents/services/lookupsvc/lookupsvc/handler.py", line 86, in handle_lookup
+    query = request.param("query")
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trpycore/trpycore/mongrel2_common/request.py", line 119, in param
+    return self.url_param(name, escape)
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trpycore/trpycore/mongrel2_common/request.py", line 133, in url_param
+    value = self.url_params[name][0]
+KeyError: 'query'
+2012-04-12 09:21:35,483 ERROR: root 'query'
+Traceback (most recent call last):
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trsvcscore/trsvcscore/service_gevent/handler.py", line 291, in handle
+    response = handler(request, **match.groupdict())
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trsvcscore/trsvcscore/mongrel2/decorator.py", line 22, in check
+    return func(self, request, session, **kwargs)
+  File "/Users/jmullins/dev/30and30/techresidents/services/lookupsvc/lookupsvc/handler.py", line 86, in handle_lookup
+    query = request.param("query")
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trpycore/trpycore/mongrel2_common/request.py", line 119, in param
+    return self.url_param(name, escape)
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trpycore/trpycore/mongrel2_common/request.py", line 133, in url_param
+    value = self.url_params[name][0]
+KeyError: 'query'
+2012-04-12 09:26:42,145 ERROR: root 'query'
+Traceback (most recent call last):
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trsvcscore/trsvcscore/service_gevent/handler.py", line 291, in handle
+    response = handler(request, **match.groupdict())
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trsvcscore/trsvcscore/mongrel2/decorator.py", line 22, in check
+    return func(self, request, session, **kwargs)
+  File "/Users/jmullins/dev/30and30/techresidents/services/lookupsvc/lookupsvc/handler.py", line 86, in handle_lookup
+    query = request.param("query")
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trpycore/trpycore/mongrel2_common/request.py", line 119, in param
+    return self.url_param(name, escape)
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trpycore/trpycore/mongrel2_common/request.py", line 133, in url_param
+    value = self.url_params[name][0]
+KeyError: 'query'
+2012-04-12 09:30:56,739 ERROR: root 'query'
+Traceback (most recent call last):
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trsvcscore/trsvcscore/service_gevent/handler.py", line 291, in handle
+    response = handler(request, **match.groupdict())
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trsvcscore/trsvcscore/mongrel2/decorator.py", line 22, in check
+    return func(self, request, session, **kwargs)
+  File "/Users/jmullins/dev/30and30/techresidents/services/lookupsvc/lookupsvc/handler.py", line 86, in handle_lookup
+    query = request.param("query")
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trpycore/trpycore/mongrel2_common/request.py", line 119, in param
+    return self.url_param(name, escape)
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trpycore/trpycore/mongrel2_common/request.py", line 133, in url_param
+    value = self.url_params[name][0]
+KeyError: 'query'
+2012-04-12 09:32:37,554 ERROR: root 'query'
+Traceback (most recent call last):
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trsvcscore/trsvcscore/service_gevent/handler.py", line 291, in handle
+    response = handler(request, **match.groupdict())
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trsvcscore/trsvcscore/mongrel2/decorator.py", line 22, in check
+    return func(self, request, session, **kwargs)
+  File "/Users/jmullins/dev/30and30/techresidents/services/lookupsvc/lookupsvc/handler.py", line 86, in handle_lookup
+    query = request.param("query")
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trpycore/trpycore/mongrel2_common/request.py", line 119, in param
+    return self.url_param(name, escape)
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trpycore/trpycore/mongrel2_common/request.py", line 133, in url_param
+    value = self.url_params[name][0]
+KeyError: 'query'
+2012-04-12 09:32:59,596 ERROR: root 'query'
+Traceback (most recent call last):
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trsvcscore/trsvcscore/service_gevent/handler.py", line 291, in handle
+    response = handler(request, **match.groupdict())
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trsvcscore/trsvcscore/mongrel2/decorator.py", line 22, in check
+    return func(self, request, session, **kwargs)
+  File "/Users/jmullins/dev/30and30/techresidents/services/lookupsvc/lookupsvc/handler.py", line 86, in handle_lookup
+    query = request.param("query")
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trpycore/trpycore/mongrel2_common/request.py", line 119, in param
+    return self.url_param(name, escape)
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trpycore/trpycore/mongrel2_common/request.py", line 133, in url_param
+    value = self.url_params[name][0]
+KeyError: 'query'
+2012-04-12 09:33:41,155 ERROR: root 'query'
+Traceback (most recent call last):
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trsvcscore/trsvcscore/service_gevent/handler.py", line 291, in handle
+    response = handler(request, **match.groupdict())
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trsvcscore/trsvcscore/mongrel2/decorator.py", line 22, in check
+    return func(self, request, session, **kwargs)
+  File "/Users/jmullins/dev/30and30/techresidents/services/lookupsvc/lookupsvc/handler.py", line 86, in handle_lookup
+    query = request.param("query")
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trpycore/trpycore/mongrel2_common/request.py", line 119, in param
+    return self.url_param(name, escape)
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trpycore/trpycore/mongrel2_common/request.py", line 133, in url_param
+    value = self.url_params[name][0]
+KeyError: 'query'
+2012-04-12 10:27:57,191 ERROR: root 'query'
+Traceback (most recent call last):
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trsvcscore/trsvcscore/service_gevent/handler.py", line 291, in handle
+    response = handler(request, **match.groupdict())
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trsvcscore/trsvcscore/mongrel2/decorator.py", line 22, in check
+    return func(self, request, session, **kwargs)
+  File "/Users/jmullins/dev/30and30/techresidents/services/lookupsvc/lookupsvc/handler.py", line 86, in handle_lookup
+    query = request.param("query")
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trpycore/trpycore/mongrel2_common/request.py", line 119, in param
+    return self.url_param(name, escape)
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trpycore/trpycore/mongrel2_common/request.py", line 133, in url_param
+    value = self.url_params[name][0]
+KeyError: 'query'
+2012-04-12 10:28:33,441 ERROR: root 'query'
+Traceback (most recent call last):
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trsvcscore/trsvcscore/service_gevent/handler.py", line 291, in handle
+    response = handler(request, **match.groupdict())
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trsvcscore/trsvcscore/mongrel2/decorator.py", line 22, in check
+    return func(self, request, session, **kwargs)
+  File "/Users/jmullins/dev/30and30/techresidents/services/lookupsvc/lookupsvc/handler.py", line 86, in handle_lookup
+    query = request.param("query")
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trpycore/trpycore/mongrel2_common/request.py", line 119, in param
+    return self.url_param(name, escape)
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trpycore/trpycore/mongrel2_common/request.py", line 133, in url_param
+    value = self.url_params[name][0]
+KeyError: 'query'
+2012-04-12 10:28:58,831 ERROR: root 'query'
+Traceback (most recent call last):
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trsvcscore/trsvcscore/service_gevent/handler.py", line 291, in handle
+    response = handler(request, **match.groupdict())
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trsvcscore/trsvcscore/mongrel2/decorator.py", line 22, in check
+    return func(self, request, session, **kwargs)
+  File "/Users/jmullins/dev/30and30/techresidents/services/lookupsvc/lookupsvc/handler.py", line 86, in handle_lookup
+    query = request.param("query")
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trpycore/trpycore/mongrel2_common/request.py", line 119, in param
+    return self.url_param(name, escape)
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trpycore/trpycore/mongrel2_common/request.py", line 133, in url_param
+    value = self.url_params[name][0]
+KeyError: 'query'
+2012-04-12 10:29:07,636 ERROR: root 'query'
+Traceback (most recent call last):
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trsvcscore/trsvcscore/service_gevent/handler.py", line 291, in handle
+    response = handler(request, **match.groupdict())
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trsvcscore/trsvcscore/mongrel2/decorator.py", line 22, in check
+    return func(self, request, session, **kwargs)
+  File "/Users/jmullins/dev/30and30/techresidents/services/lookupsvc/lookupsvc/handler.py", line 86, in handle_lookup
+    query = request.param("query")
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trpycore/trpycore/mongrel2_common/request.py", line 119, in param
+    return self.url_param(name, escape)
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trpycore/trpycore/mongrel2_common/request.py", line 133, in url_param
+    value = self.url_params[name][0]
+KeyError: 'query'
+2012-04-12 10:29:58,365 ERROR: root 'query'
+Traceback (most recent call last):
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trsvcscore/trsvcscore/service_gevent/handler.py", line 291, in handle
+    response = handler(request, **match.groupdict())
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trsvcscore/trsvcscore/mongrel2/decorator.py", line 22, in check
+    return func(self, request, session, **kwargs)
+  File "/Users/jmullins/dev/30and30/techresidents/services/lookupsvc/lookupsvc/handler.py", line 86, in handle_lookup
+    query = request.param("query")
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trpycore/trpycore/mongrel2_common/request.py", line 119, in param
+    return self.url_param(name, escape)
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trpycore/trpycore/mongrel2_common/request.py", line 133, in url_param
+    value = self.url_params[name][0]
+KeyError: 'query'
+2012-04-12 10:29:58,803 ERROR: root 'query'
+Traceback (most recent call last):
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trsvcscore/trsvcscore/service_gevent/handler.py", line 291, in handle
+    response = handler(request, **match.groupdict())
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trsvcscore/trsvcscore/mongrel2/decorator.py", line 22, in check
+    return func(self, request, session, **kwargs)
+  File "/Users/jmullins/dev/30and30/techresidents/services/lookupsvc/lookupsvc/handler.py", line 86, in handle_lookup
+    query = request.param("query")
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trpycore/trpycore/mongrel2_common/request.py", line 119, in param
+    return self.url_param(name, escape)
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trpycore/trpycore/mongrel2_common/request.py", line 133, in url_param
+    value = self.url_params[name][0]
+KeyError: 'query'
+2012-04-12 10:40:31,388 ERROR: root 'query'
+Traceback (most recent call last):
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trsvcscore/trsvcscore/service_gevent/handler.py", line 291, in handle
+    response = handler(request, **match.groupdict())
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trsvcscore/trsvcscore/mongrel2/decorator.py", line 22, in check
+    return func(self, request, session, **kwargs)
+  File "/Users/jmullins/dev/30and30/techresidents/services/lookupsvc/lookupsvc/handler.py", line 86, in handle_lookup
+    query = request.param("query")
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trpycore/trpycore/mongrel2_common/request.py", line 119, in param
+    return self.url_param(name, escape)
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trpycore/trpycore/mongrel2_common/request.py", line 133, in url_param
+    value = self.url_params[name][0]
+KeyError: 'query'
+2012-04-12 10:41:40,017 ERROR: root 'query'
+Traceback (most recent call last):
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trsvcscore/trsvcscore/service_gevent/handler.py", line 291, in handle
+    response = handler(request, **match.groupdict())
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trsvcscore/trsvcscore/mongrel2/decorator.py", line 22, in check
+    return func(self, request, session, **kwargs)
+  File "/Users/jmullins/dev/30and30/techresidents/services/lookupsvc/lookupsvc/handler.py", line 86, in handle_lookup
+    query = request.param("query")
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trpycore/trpycore/mongrel2_common/request.py", line 119, in param
+    return self.url_param(name, escape)
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trpycore/trpycore/mongrel2_common/request.py", line 133, in url_param
+    value = self.url_params[name][0]
+KeyError: 'query'
+2012-04-12 10:41:44,997 ERROR: root 'query'
+Traceback (most recent call last):
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trsvcscore/trsvcscore/service_gevent/handler.py", line 291, in handle
+    response = handler(request, **match.groupdict())
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trsvcscore/trsvcscore/mongrel2/decorator.py", line 22, in check
+    return func(self, request, session, **kwargs)
+  File "/Users/jmullins/dev/30and30/techresidents/services/lookupsvc/lookupsvc/handler.py", line 86, in handle_lookup
+    query = request.param("query")
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trpycore/trpycore/mongrel2_common/request.py", line 119, in param
+    return self.url_param(name, escape)
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trpycore/trpycore/mongrel2_common/request.py", line 133, in url_param
+    value = self.url_params[name][0]
+KeyError: 'query'
+2012-04-12 10:41:46,308 ERROR: root 'query'
+Traceback (most recent call last):
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trsvcscore/trsvcscore/service_gevent/handler.py", line 291, in handle
+    response = handler(request, **match.groupdict())
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trsvcscore/trsvcscore/mongrel2/decorator.py", line 22, in check
+    return func(self, request, session, **kwargs)
+  File "/Users/jmullins/dev/30and30/techresidents/services/lookupsvc/lookupsvc/handler.py", line 86, in handle_lookup
+    query = request.param("query")
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trpycore/trpycore/mongrel2_common/request.py", line 119, in param
+    return self.url_param(name, escape)
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trpycore/trpycore/mongrel2_common/request.py", line 133, in url_param
+    value = self.url_params[name][0]
+KeyError: 'query'
+2012-04-12 10:41:47,643 ERROR: root 'query'
+Traceback (most recent call last):
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trsvcscore/trsvcscore/service_gevent/handler.py", line 291, in handle
+    response = handler(request, **match.groupdict())
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trsvcscore/trsvcscore/mongrel2/decorator.py", line 22, in check
+    return func(self, request, session, **kwargs)
+  File "/Users/jmullins/dev/30and30/techresidents/services/lookupsvc/lookupsvc/handler.py", line 86, in handle_lookup
+    query = request.param("query")
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trpycore/trpycore/mongrel2_common/request.py", line 119, in param
+    return self.url_param(name, escape)
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trpycore/trpycore/mongrel2_common/request.py", line 133, in url_param
+    value = self.url_params[name][0]
+KeyError: 'query'
+2012-04-12 10:41:47,859 ERROR: root 'query'
+Traceback (most recent call last):
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trsvcscore/trsvcscore/service_gevent/handler.py", line 291, in handle
+    response = handler(request, **match.groupdict())
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trsvcscore/trsvcscore/mongrel2/decorator.py", line 22, in check
+    return func(self, request, session, **kwargs)
+  File "/Users/jmullins/dev/30and30/techresidents/services/lookupsvc/lookupsvc/handler.py", line 86, in handle_lookup
+    query = request.param("query")
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trpycore/trpycore/mongrel2_common/request.py", line 119, in param
+    return self.url_param(name, escape)
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trpycore/trpycore/mongrel2_common/request.py", line 133, in url_param
+    value = self.url_params[name][0]
+KeyError: 'query'
+2012-04-12 10:41:50,110 ERROR: root 'query'
+Traceback (most recent call last):
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trsvcscore/trsvcscore/service_gevent/handler.py", line 291, in handle
+    response = handler(request, **match.groupdict())
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trsvcscore/trsvcscore/mongrel2/decorator.py", line 22, in check
+    return func(self, request, session, **kwargs)
+  File "/Users/jmullins/dev/30and30/techresidents/services/lookupsvc/lookupsvc/handler.py", line 86, in handle_lookup
+    query = request.param("query")
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trpycore/trpycore/mongrel2_common/request.py", line 119, in param
+    return self.url_param(name, escape)
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trpycore/trpycore/mongrel2_common/request.py", line 133, in url_param
+    value = self.url_params[name][0]
+KeyError: 'query'
+2012-04-12 10:42:01,549 ERROR: root 'query'
+Traceback (most recent call last):
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trsvcscore/trsvcscore/service_gevent/handler.py", line 291, in handle
+    response = handler(request, **match.groupdict())
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trsvcscore/trsvcscore/mongrel2/decorator.py", line 22, in check
+    return func(self, request, session, **kwargs)
+  File "/Users/jmullins/dev/30and30/techresidents/services/lookupsvc/lookupsvc/handler.py", line 86, in handle_lookup
+    query = request.param("query")
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trpycore/trpycore/mongrel2_common/request.py", line 119, in param
+    return self.url_param(name, escape)
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trpycore/trpycore/mongrel2_common/request.py", line 133, in url_param
+    value = self.url_params[name][0]
+KeyError: 'query'
+2012-04-12 10:42:11,271 ERROR: root 'query'
+Traceback (most recent call last):
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trsvcscore/trsvcscore/service_gevent/handler.py", line 291, in handle
+    response = handler(request, **match.groupdict())
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trsvcscore/trsvcscore/mongrel2/decorator.py", line 22, in check
+    return func(self, request, session, **kwargs)
+  File "/Users/jmullins/dev/30and30/techresidents/services/lookupsvc/lookupsvc/handler.py", line 86, in handle_lookup
+    query = request.param("query")
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trpycore/trpycore/mongrel2_common/request.py", line 119, in param
+    return self.url_param(name, escape)
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trpycore/trpycore/mongrel2_common/request.py", line 133, in url_param
+    value = self.url_params[name][0]
+KeyError: 'query'
+2012-04-12 10:45:31,117 ERROR: root 'query'
+Traceback (most recent call last):
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trsvcscore/trsvcscore/service_gevent/handler.py", line 291, in handle
+    response = handler(request, **match.groupdict())
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trsvcscore/trsvcscore/mongrel2/decorator.py", line 22, in check
+    return func(self, request, session, **kwargs)
+  File "/Users/jmullins/dev/30and30/techresidents/services/lookupsvc/lookupsvc/handler.py", line 86, in handle_lookup
+    query = request.param("query")
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trpycore/trpycore/mongrel2_common/request.py", line 119, in param
+    return self.url_param(name, escape)
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trpycore/trpycore/mongrel2_common/request.py", line 133, in url_param
+    value = self.url_params[name][0]
+KeyError: 'query'
+2012-04-12 10:45:58,565 ERROR: root 'query'
+Traceback (most recent call last):
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trsvcscore/trsvcscore/service_gevent/handler.py", line 291, in handle
+    response = handler(request, **match.groupdict())
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trsvcscore/trsvcscore/mongrel2/decorator.py", line 22, in check
+    return func(self, request, session, **kwargs)
+  File "/Users/jmullins/dev/30and30/techresidents/services/lookupsvc/lookupsvc/handler.py", line 86, in handle_lookup
+    query = request.param("query")
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trpycore/trpycore/mongrel2_common/request.py", line 119, in param
+    return self.url_param(name, escape)
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trpycore/trpycore/mongrel2_common/request.py", line 133, in url_param
+    value = self.url_params[name][0]
+KeyError: 'query'
+2012-04-12 10:46:08,891 ERROR: root 'query'
+Traceback (most recent call last):
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trsvcscore/trsvcscore/service_gevent/handler.py", line 291, in handle
+    response = handler(request, **match.groupdict())
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trsvcscore/trsvcscore/mongrel2/decorator.py", line 22, in check
+    return func(self, request, session, **kwargs)
+  File "/Users/jmullins/dev/30and30/techresidents/services/lookupsvc/lookupsvc/handler.py", line 86, in handle_lookup
+    query = request.param("query")
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trpycore/trpycore/mongrel2_common/request.py", line 119, in param
+    return self.url_param(name, escape)
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trpycore/trpycore/mongrel2_common/request.py", line 133, in url_param
+    value = self.url_params[name][0]
+KeyError: 'query'
+2012-04-12 10:46:10,233 ERROR: root 'query'
+Traceback (most recent call last):
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trsvcscore/trsvcscore/service_gevent/handler.py", line 291, in handle
+    response = handler(request, **match.groupdict())
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trsvcscore/trsvcscore/mongrel2/decorator.py", line 22, in check
+    return func(self, request, session, **kwargs)
+  File "/Users/jmullins/dev/30and30/techresidents/services/lookupsvc/lookupsvc/handler.py", line 86, in handle_lookup
+    query = request.param("query")
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trpycore/trpycore/mongrel2_common/request.py", line 119, in param
+    return self.url_param(name, escape)
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trpycore/trpycore/mongrel2_common/request.py", line 133, in url_param
+    value = self.url_params[name][0]
+KeyError: 'query'
+2012-04-12 10:46:11,761 ERROR: root 'query'
+Traceback (most recent call last):
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trsvcscore/trsvcscore/service_gevent/handler.py", line 291, in handle
+    response = handler(request, **match.groupdict())
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trsvcscore/trsvcscore/mongrel2/decorator.py", line 22, in check
+    return func(self, request, session, **kwargs)
+  File "/Users/jmullins/dev/30and30/techresidents/services/lookupsvc/lookupsvc/handler.py", line 86, in handle_lookup
+    query = request.param("query")
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trpycore/trpycore/mongrel2_common/request.py", line 119, in param
+    return self.url_param(name, escape)
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trpycore/trpycore/mongrel2_common/request.py", line 133, in url_param
+    value = self.url_params[name][0]
+KeyError: 'query'
+2012-04-12 10:46:13,763 ERROR: root 'query'
+Traceback (most recent call last):
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trsvcscore/trsvcscore/service_gevent/handler.py", line 291, in handle
+    response = handler(request, **match.groupdict())
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trsvcscore/trsvcscore/mongrel2/decorator.py", line 22, in check
+    return func(self, request, session, **kwargs)
+  File "/Users/jmullins/dev/30and30/techresidents/services/lookupsvc/lookupsvc/handler.py", line 86, in handle_lookup
+    query = request.param("query")
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trpycore/trpycore/mongrel2_common/request.py", line 119, in param
+    return self.url_param(name, escape)
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trpycore/trpycore/mongrel2_common/request.py", line 133, in url_param
+    value = self.url_params[name][0]
+KeyError: 'query'
+2012-04-12 10:47:53,491 ERROR: root 'query'
+Traceback (most recent call last):
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trsvcscore/trsvcscore/service_gevent/handler.py", line 291, in handle
+    response = handler(request, **match.groupdict())
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trsvcscore/trsvcscore/mongrel2/decorator.py", line 22, in check
+    return func(self, request, session, **kwargs)
+  File "/Users/jmullins/dev/30and30/techresidents/services/lookupsvc/lookupsvc/handler.py", line 86, in handle_lookup
+    query = request.param("query")
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trpycore/trpycore/mongrel2_common/request.py", line 119, in param
+    return self.url_param(name, escape)
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trpycore/trpycore/mongrel2_common/request.py", line 133, in url_param
+    value = self.url_params[name][0]
+KeyError: 'query'
+2012-04-12 10:47:55,422 ERROR: root 'query'
+Traceback (most recent call last):
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trsvcscore/trsvcscore/service_gevent/handler.py", line 291, in handle
+    response = handler(request, **match.groupdict())
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trsvcscore/trsvcscore/mongrel2/decorator.py", line 22, in check
+    return func(self, request, session, **kwargs)
+  File "/Users/jmullins/dev/30and30/techresidents/services/lookupsvc/lookupsvc/handler.py", line 86, in handle_lookup
+    query = request.param("query")
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trpycore/trpycore/mongrel2_common/request.py", line 119, in param
+    return self.url_param(name, escape)
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trpycore/trpycore/mongrel2_common/request.py", line 133, in url_param
+    value = self.url_params[name][0]
+KeyError: 'query'
+2012-04-12 10:47:56,263 ERROR: root 'query'
+Traceback (most recent call last):
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trsvcscore/trsvcscore/service_gevent/handler.py", line 291, in handle
+    response = handler(request, **match.groupdict())
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trsvcscore/trsvcscore/mongrel2/decorator.py", line 22, in check
+    return func(self, request, session, **kwargs)
+  File "/Users/jmullins/dev/30and30/techresidents/services/lookupsvc/lookupsvc/handler.py", line 86, in handle_lookup
+    query = request.param("query")
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trpycore/trpycore/mongrel2_common/request.py", line 119, in param
+    return self.url_param(name, escape)
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trpycore/trpycore/mongrel2_common/request.py", line 133, in url_param
+    value = self.url_params[name][0]
+KeyError: 'query'
+2012-04-12 10:47:56,896 ERROR: root 'query'
+Traceback (most recent call last):
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trsvcscore/trsvcscore/service_gevent/handler.py", line 291, in handle
+    response = handler(request, **match.groupdict())
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trsvcscore/trsvcscore/mongrel2/decorator.py", line 22, in check
+    return func(self, request, session, **kwargs)
+  File "/Users/jmullins/dev/30and30/techresidents/services/lookupsvc/lookupsvc/handler.py", line 86, in handle_lookup
+    query = request.param("query")
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trpycore/trpycore/mongrel2_common/request.py", line 119, in param
+    return self.url_param(name, escape)
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trpycore/trpycore/mongrel2_common/request.py", line 133, in url_param
+    value = self.url_params[name][0]
+KeyError: 'query'
+2012-04-12 10:47:59,948 ERROR: root 'query'
+Traceback (most recent call last):
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trsvcscore/trsvcscore/service_gevent/handler.py", line 291, in handle
+    response = handler(request, **match.groupdict())
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trsvcscore/trsvcscore/mongrel2/decorator.py", line 22, in check
+    return func(self, request, session, **kwargs)
+  File "/Users/jmullins/dev/30and30/techresidents/services/lookupsvc/lookupsvc/handler.py", line 86, in handle_lookup
+    query = request.param("query")
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trpycore/trpycore/mongrel2_common/request.py", line 119, in param
+    return self.url_param(name, escape)
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trpycore/trpycore/mongrel2_common/request.py", line 133, in url_param
+    value = self.url_params[name][0]
+KeyError: 'query'
+2012-04-12 10:48:02,946 ERROR: root 'query'
+Traceback (most recent call last):
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trsvcscore/trsvcscore/service_gevent/handler.py", line 291, in handle
+    response = handler(request, **match.groupdict())
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trsvcscore/trsvcscore/mongrel2/decorator.py", line 22, in check
+    return func(self, request, session, **kwargs)
+  File "/Users/jmullins/dev/30and30/techresidents/services/lookupsvc/lookupsvc/handler.py", line 86, in handle_lookup
+    query = request.param("query")
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trpycore/trpycore/mongrel2_common/request.py", line 119, in param
+    return self.url_param(name, escape)
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trpycore/trpycore/mongrel2_common/request.py", line 133, in url_param
+    value = self.url_params[name][0]
+KeyError: 'query'
+2012-04-12 10:48:05,176 ERROR: root 'query'
+Traceback (most recent call last):
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trsvcscore/trsvcscore/service_gevent/handler.py", line 291, in handle
+    response = handler(request, **match.groupdict())
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trsvcscore/trsvcscore/mongrel2/decorator.py", line 22, in check
+    return func(self, request, session, **kwargs)
+  File "/Users/jmullins/dev/30and30/techresidents/services/lookupsvc/lookupsvc/handler.py", line 86, in handle_lookup
+    query = request.param("query")
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trpycore/trpycore/mongrel2_common/request.py", line 119, in param
+    return self.url_param(name, escape)
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trpycore/trpycore/mongrel2_common/request.py", line 133, in url_param
+    value = self.url_params[name][0]
+KeyError: 'query'
+2012-04-12 10:48:09,086 ERROR: root 'query'
+Traceback (most recent call last):
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trsvcscore/trsvcscore/service_gevent/handler.py", line 291, in handle
+    response = handler(request, **match.groupdict())
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trsvcscore/trsvcscore/mongrel2/decorator.py", line 22, in check
+    return func(self, request, session, **kwargs)
+  File "/Users/jmullins/dev/30and30/techresidents/services/lookupsvc/lookupsvc/handler.py", line 86, in handle_lookup
+    query = request.param("query")
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trpycore/trpycore/mongrel2_common/request.py", line 119, in param
+    return self.url_param(name, escape)
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trpycore/trpycore/mongrel2_common/request.py", line 133, in url_param
+    value = self.url_params[name][0]
+KeyError: 'query'
+2012-04-12 10:48:16,469 ERROR: root 'query'
+Traceback (most recent call last):
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trsvcscore/trsvcscore/service_gevent/handler.py", line 291, in handle
+    response = handler(request, **match.groupdict())
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trsvcscore/trsvcscore/mongrel2/decorator.py", line 22, in check
+    return func(self, request, session, **kwargs)
+  File "/Users/jmullins/dev/30and30/techresidents/services/lookupsvc/lookupsvc/handler.py", line 86, in handle_lookup
+    query = request.param("query")
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trpycore/trpycore/mongrel2_common/request.py", line 119, in param
+    return self.url_param(name, escape)
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trpycore/trpycore/mongrel2_common/request.py", line 133, in url_param
+    value = self.url_params[name][0]
+KeyError: 'query'
+2012-04-12 10:48:18,013 ERROR: root 'query'
+Traceback (most recent call last):
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trsvcscore/trsvcscore/service_gevent/handler.py", line 291, in handle
+    response = handler(request, **match.groupdict())
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trsvcscore/trsvcscore/mongrel2/decorator.py", line 22, in check
+    return func(self, request, session, **kwargs)
+  File "/Users/jmullins/dev/30and30/techresidents/services/lookupsvc/lookupsvc/handler.py", line 86, in handle_lookup
+    query = request.param("query")
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trpycore/trpycore/mongrel2_common/request.py", line 119, in param
+    return self.url_param(name, escape)
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trpycore/trpycore/mongrel2_common/request.py", line 133, in url_param
+    value = self.url_params[name][0]
+KeyError: 'query'
+2012-04-12 10:48:18,964 ERROR: root 'query'
+Traceback (most recent call last):
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trsvcscore/trsvcscore/service_gevent/handler.py", line 291, in handle
+    response = handler(request, **match.groupdict())
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trsvcscore/trsvcscore/mongrel2/decorator.py", line 22, in check
+    return func(self, request, session, **kwargs)
+  File "/Users/jmullins/dev/30and30/techresidents/services/lookupsvc/lookupsvc/handler.py", line 86, in handle_lookup
+    query = request.param("query")
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trpycore/trpycore/mongrel2_common/request.py", line 119, in param
+    return self.url_param(name, escape)
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trpycore/trpycore/mongrel2_common/request.py", line 133, in url_param
+    value = self.url_params[name][0]
+KeyError: 'query'
+2012-04-12 10:48:20,741 ERROR: root 'query'
+Traceback (most recent call last):
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trsvcscore/trsvcscore/service_gevent/handler.py", line 291, in handle
+    response = handler(request, **match.groupdict())
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trsvcscore/trsvcscore/mongrel2/decorator.py", line 22, in check
+    return func(self, request, session, **kwargs)
+  File "/Users/jmullins/dev/30and30/techresidents/services/lookupsvc/lookupsvc/handler.py", line 86, in handle_lookup
+    query = request.param("query")
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trpycore/trpycore/mongrel2_common/request.py", line 119, in param
+    return self.url_param(name, escape)
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trpycore/trpycore/mongrel2_common/request.py", line 133, in url_param
+    value = self.url_params[name][0]
+KeyError: 'query'
+2012-04-12 10:48:20,924 ERROR: root 'query'
+Traceback (most recent call last):
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trsvcscore/trsvcscore/service_gevent/handler.py", line 291, in handle
+    response = handler(request, **match.groupdict())
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trsvcscore/trsvcscore/mongrel2/decorator.py", line 22, in check
+    return func(self, request, session, **kwargs)
+  File "/Users/jmullins/dev/30and30/techresidents/services/lookupsvc/lookupsvc/handler.py", line 86, in handle_lookup
+    query = request.param("query")
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trpycore/trpycore/mongrel2_common/request.py", line 119, in param
+    return self.url_param(name, escape)
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trpycore/trpycore/mongrel2_common/request.py", line 133, in url_param
+    value = self.url_params[name][0]
+KeyError: 'query'
+2012-04-12 10:49:40,801 ERROR: root 'query'
+Traceback (most recent call last):
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trsvcscore/trsvcscore/service_gevent/handler.py", line 291, in handle
+    response = handler(request, **match.groupdict())
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trsvcscore/trsvcscore/mongrel2/decorator.py", line 22, in check
+    return func(self, request, session, **kwargs)
+  File "/Users/jmullins/dev/30and30/techresidents/services/lookupsvc/lookupsvc/handler.py", line 86, in handle_lookup
+    query = request.param("query")
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trpycore/trpycore/mongrel2_common/request.py", line 119, in param
+    return self.url_param(name, escape)
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trpycore/trpycore/mongrel2_common/request.py", line 133, in url_param
+    value = self.url_params[name][0]
+KeyError: 'query'
+2012-04-12 10:49:42,840 ERROR: root 'query'
+Traceback (most recent call last):
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trsvcscore/trsvcscore/service_gevent/handler.py", line 291, in handle
+    response = handler(request, **match.groupdict())
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trsvcscore/trsvcscore/mongrel2/decorator.py", line 22, in check
+    return func(self, request, session, **kwargs)
+  File "/Users/jmullins/dev/30and30/techresidents/services/lookupsvc/lookupsvc/handler.py", line 86, in handle_lookup
+    query = request.param("query")
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trpycore/trpycore/mongrel2_common/request.py", line 119, in param
+    return self.url_param(name, escape)
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trpycore/trpycore/mongrel2_common/request.py", line 133, in url_param
+    value = self.url_params[name][0]
+KeyError: 'query'
+2012-04-12 10:49:43,821 ERROR: root 'query'
+Traceback (most recent call last):
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trsvcscore/trsvcscore/service_gevent/handler.py", line 291, in handle
+    response = handler(request, **match.groupdict())
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trsvcscore/trsvcscore/mongrel2/decorator.py", line 22, in check
+    return func(self, request, session, **kwargs)
+  File "/Users/jmullins/dev/30and30/techresidents/services/lookupsvc/lookupsvc/handler.py", line 86, in handle_lookup
+    query = request.param("query")
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trpycore/trpycore/mongrel2_common/request.py", line 119, in param
+    return self.url_param(name, escape)
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trpycore/trpycore/mongrel2_common/request.py", line 133, in url_param
+    value = self.url_params[name][0]
+KeyError: 'query'
+2012-04-12 10:49:46,871 ERROR: root 'query'
+Traceback (most recent call last):
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trsvcscore/trsvcscore/service_gevent/handler.py", line 291, in handle
+    response = handler(request, **match.groupdict())
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trsvcscore/trsvcscore/mongrel2/decorator.py", line 22, in check
+    return func(self, request, session, **kwargs)
+  File "/Users/jmullins/dev/30and30/techresidents/services/lookupsvc/lookupsvc/handler.py", line 86, in handle_lookup
+    query = request.param("query")
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trpycore/trpycore/mongrel2_common/request.py", line 119, in param
+    return self.url_param(name, escape)
+  File "/Users/jmullins/.virtualenvs/lookupsvc/src/trpycore/trpycore/mongrel2_common/request.py", line 133, in url_param
+    value = self.url_params[name][0]
+KeyError: 'query'
+2012-04-12 10:51:45,379 INFO: trpycore.zookeeper_gevent.client Stopping GZookeeperClient ...
+2012-04-12 10:51:45,379 INFO: trpycore.zookeeper_gevent.client GZookeeperClient stopped.
+2012-04-12 10:55:31,245 INFO: handler.LookupServiceHandler LocationLookup created.
+2012-04-12 10:55:31,245 INFO: handler.LookupServiceHandler TagLookup created.
+2012-04-12 10:55:31,245 INFO: handler.LookupServiceHandler LocationLookup loaded.
+2012-04-12 10:55:31,246 INFO: handler.LookupServiceHandler TagLookup loaded.
+2012-04-12 10:55:31,246 INFO: trpycore.zookeeper_gevent.client Starting GZookeeperClient ...
+2012-04-12 10:55:31,475 WARNING: trsvcscore.registrar.zookeeper.ZookeeperServiceRegistrar Registartion for lookupsvc deferred: Zookeeper client not connected
+2012-04-12 10:55:31,476 INFO: trpycore.zookeeper_gevent.client GZookeeperClient started.
+2012-04-12 10:55:31,483 INFO: trsvcscore.registrar.zookeeper.ZookeeperServiceRegistrar Registration for lookupsvc completed
+2012-04-12 11:02:47,015 INFO: trpycore.zookeeper_gevent.client Stopping GZookeeperClient ...
+2012-04-12 11:02:47,016 INFO: trpycore.zookeeper_gevent.client GZookeeperClient stopped.
+2012-04-12 11:03:04,122 INFO: handler.LookupServiceHandler LocationLookup created.
+2012-04-12 11:03:04,122 INFO: handler.LookupServiceHandler TagLookup created.
+2012-04-12 11:03:04,122 INFO: handler.LookupServiceHandler LocationLookup loaded.
+2012-04-12 11:03:04,122 INFO: handler.LookupServiceHandler TagLookup loaded.
+2012-04-12 11:03:04,122 INFO: trpycore.zookeeper_gevent.client Starting GZookeeperClient ...
+2012-04-12 11:03:04,322 WARNING: trsvcscore.registrar.zookeeper.ZookeeperServiceRegistrar Registartion for lookupsvc deferred: Zookeeper client not connected
+2012-04-12 11:03:04,322 INFO: trpycore.zookeeper_gevent.client GZookeeperClient started.
+2012-04-12 11:03:04,341 INFO: trsvcscore.registrar.zookeeper.ZookeeperServiceRegistrar Registration for lookupsvc completed
+2012-04-12 11:04:42,070 INFO: trpycore.zookeeper_gevent.client Stopping GZookeeperClient ...
+2012-04-12 11:04:42,071 INFO: trpycore.zookeeper_gevent.client GZookeeperClient stopped.
+2012-04-12 11:04:46,944 INFO: handler.LookupServiceHandler LocationLookup created.
+2012-04-12 11:04:46,944 INFO: handler.LookupServiceHandler TagLookup created.
+2012-04-12 11:04:46,945 INFO: handler.LookupServiceHandler LocationLookup loaded.
+2012-04-12 11:04:46,945 INFO: handler.LookupServiceHandler TagLookup loaded.
+2012-04-12 11:04:46,945 INFO: trpycore.zookeeper_gevent.client Starting GZookeeperClient ...
+2012-04-12 11:04:46,947 WARNING: trsvcscore.registrar.zookeeper.ZookeeperServiceRegistrar Registartion for lookupsvc deferred: Zookeeper client not connected
+2012-04-12 11:04:46,947 INFO: trpycore.zookeeper_gevent.client GZookeeperClient started.
+2012-04-12 11:04:46,952 INFO: trsvcscore.registrar.zookeeper.ZookeeperServiceRegistrar Registration for lookupsvc completed
+2012-04-12 11:47:45,308 INFO: trpycore.zookeeper_gevent.client Stopping GZookeeperClient ...
+2012-04-12 11:47:45,309 INFO: trpycore.zookeeper_gevent.client GZookeeperClient stopped.
+2012-04-12 11:52:53,496 INFO: handler.LookupServiceHandler LocationLookup created.
+2012-04-12 11:52:53,496 INFO: handler.LookupServiceHandler TagLookup created.
+2012-04-12 11:52:53,496 INFO: handler.LookupServiceHandler LocationLookup loaded.
+2012-04-12 11:52:53,497 INFO: handler.LookupServiceHandler TagLookup loaded.
+2012-04-12 11:52:53,497 INFO: trpycore.zookeeper_gevent.client Starting GZookeeperClient ...
+2012-04-12 11:52:53,654 WARNING: trsvcscore.registrar.zookeeper.ZookeeperServiceRegistrar Registartion for lookupsvc deferred: Zookeeper client not connected
+2012-04-12 11:52:53,655 INFO: trpycore.zookeeper_gevent.client GZookeeperClient started.
+2012-04-12 11:52:53,660 INFO: trsvcscore.registrar.zookeeper.ZookeeperServiceRegistrar Registration for lookupsvc completed
+2012-04-12 11:53:36,143 INFO: trpycore.zookeeper_gevent.client Stopping GZookeeperClient ...
+2012-04-12 11:53:36,144 INFO: trpycore.zookeeper_gevent.client GZookeeperClient stopped.
+2012-04-12 11:53:38,977 INFO: handler.LookupServiceHandler LocationLookup created.
+2012-04-12 11:53:38,977 INFO: handler.LookupServiceHandler TagLookup created.
+2012-04-12 11:53:38,977 INFO: handler.LookupServiceHandler LocationLookup loaded.
+2012-04-12 11:53:38,977 INFO: handler.LookupServiceHandler TagLookup loaded.
+2012-04-12 11:53:38,977 INFO: trpycore.zookeeper_gevent.client Starting GZookeeperClient ...
+2012-04-12 11:53:39,000 WARNING: trsvcscore.registrar.zookeeper.ZookeeperServiceRegistrar Registartion for lookupsvc deferred: Zookeeper client not connected
+2012-04-12 11:53:39,000 INFO: trpycore.zookeeper_gevent.client GZookeeperClient started.
+2012-04-12 11:53:39,006 INFO: trsvcscore.registrar.zookeeper.ZookeeperServiceRegistrar Registration for lookupsvc completed
+2012-04-12 11:53:43,704 INFO: trpycore.zookeeper_gevent.client Stopping GZookeeperClient ...
+2012-04-12 11:53:43,705 INFO: trpycore.zookeeper_gevent.client GZookeeperClient stopped.
+2012-04-12 11:53:49,345 INFO: handler.LookupServiceHandler LocationLookup created.
+2012-04-12 11:53:49,346 INFO: handler.LookupServiceHandler TagLookup created.
+2012-04-12 11:53:49,346 INFO: handler.LookupServiceHandler LocationLookup loaded.
+2012-04-12 11:53:49,346 INFO: handler.LookupServiceHandler TagLookup loaded.
+2012-04-12 11:53:49,346 INFO: trpycore.zookeeper_gevent.client Starting GZookeeperClient ...
+2012-04-12 11:53:49,348 WARNING: trsvcscore.registrar.zookeeper.ZookeeperServiceRegistrar Registartion for lookupsvc deferred: Zookeeper client not connected
+2012-04-12 11:53:49,348 INFO: trpycore.zookeeper_gevent.client GZookeeperClient started.
+2012-04-12 11:53:49,355 INFO: trsvcscore.registrar.zookeeper.ZookeeperServiceRegistrar Registration for lookupsvc completed
