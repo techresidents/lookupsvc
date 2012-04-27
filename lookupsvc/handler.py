@@ -13,6 +13,7 @@ from trsvcscore.service_gevent.handler import GMongrel2Handler
 from trsvcscore.session.riak import RiakSessionStorePool
 from tridlcore.gen.ttypes import RequestContext
 from trlookupsvc.gen import TLookupService
+from trlookupsvc.gen.ttypes import LookupScope
 
 import version
 import settings
@@ -56,9 +57,9 @@ class LookupServiceHandler(TLookupService.Iface, GMongrel2Handler):
         for scope, registration in LookupRegistry.registry.items():
             try:
                 lookups[scope] = registration.factory_method()
-                self.log.info("%s created." % registration.name)
+                self.log.info("%s created for scope %s." % (registration.name, scope))
             except Exception as error:
-                self.log.error("unable to create %s." % registration.name)
+                self.log.error("unable to create %s for scope %s." % (registration.name, scope))
                 self.log.exception(error)
         return lookups
     
@@ -85,23 +86,29 @@ class LookupServiceHandler(TLookupService.Iface, GMongrel2Handler):
         request_context = self._handle_message(request, session)
         query = request.param("query") or ""
         max_results = request.param("maxResults") or 8
-        results = self.lookup(request_context, 2, "", query)
+
+        results = self.lookup(
+                request_context,
+                LookupScope._NAMES_TO_VALUES[scope.upper()],
+                None,
+                query,
+                max_results)
+
         json_result = {
                 "query": query,
                 "matches": [],
         }
+
         for result in results:
-            d = {"id": result.id,
-                 "value": result.value,
-                 "data": result.data
-            }
+            d = { "id": result.id, "value": result.value }
+            d.update(result.data)
             json_result["matches"].append(d)
 
         return json.dumps(json_result)
 
-    def lookup(self, requestContext, scope, category, value):
+    def lookup(self, requestContext, scope, category, value, maxResults):
         if scope in self.lookups:
-            result = self.lookups[scope].lookup(value, category)
+            result = self.lookups[scope].lookup(value, category, maxResults)
             return result
         else:
             return []

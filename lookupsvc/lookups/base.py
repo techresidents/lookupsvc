@@ -12,5 +12,5 @@ class Lookup(object):
         return
     
     @abc.abstractmethod
-    def lookup(self, value, category=None):
+    def lookup(self, value, category=None, max_results=None):
         return

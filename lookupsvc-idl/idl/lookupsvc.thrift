@@ -11,7 +11,7 @@ enum LookupScope {
 }
 
 struct LookupResult {
-    1: i32 id,
+    1: i64 id,
     2: string value,
     3: map<string, string> data,
 }
@@ -23,5 +23,6 @@ service TLookupService extends core.TRService
             2: LookupScope scope,
             3: string category,
             4: string value,
+            5: i32 maxResults,
             ),
 }
