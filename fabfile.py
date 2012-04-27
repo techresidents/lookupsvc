@@ -14,7 +14,7 @@ import version
 
 env.project = os.path.basename(os.path.dirname(__file__))
 env.project_dir = os.path.dirname(__file__)
-env.project_version = version.VERSION
+env.project_version =  version.VERSION
 env.project_user = "thirty"
 env.project_group = "thirty"
 
@@ -74,7 +74,6 @@ def _create_app_tarball(tag="HEAD", release="1", arch="x86_64"):
 
     if tag.lower() == "working":
         with _tempdir() as tempdir_name:
-            print tempdir_name
             versioned_project = "%s-%s" % (env.project, env.project_version)
             local("mkdir %s" % os.path.join(tempdir_name, versioned_project))
             local("ln -s %s %s" % (env.project_dir, os.path.join(tempdir_name, versioned_project, env.project)))
