@@ -5,7 +5,7 @@
 
 #Non-template defines
 %define app_buildroot $RPM_BUILD_ROOT/%{__prefix}/%{name}-%{version}/%{name}
-%define __prefix /opt/30and30/services/chatsvc/install
+%define __prefix /opt/30and30/services/lookupsvc/install
 %define app_installroot %{__prefix}/%{name}-%{version}/%{name}
 
 Summary: 30and30 Service 
