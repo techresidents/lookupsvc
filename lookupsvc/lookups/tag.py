@@ -18,16 +18,21 @@ TAGS = {
 class TagLookup(Lookup):
 
     @staticmethod
-    def create():
-        return TagLookup()
+    def create(handler):
+        return TagLookup(handler)
     
-    def __init__(self):
-        super(TagLookup, self).__init__(TagLookup.__name__, LookupScope.TAG)
+    def __init__(self, handler):
+        super(TagLookup, self).__init__(
+                handler,
+                TagLookup.__name__,
+                LookupScope.TAG)
         self.trie = Trie()
 
     def load(self):
+        trie = Trie()
         for key, value in TAGS.items():
-            self.trie.insert(key.lower(), value)
+            trie.insert(key.lower(), value)
+        self.trie = trie
 
     def lookup(self, value, category=None, max_results=None):
         result = []

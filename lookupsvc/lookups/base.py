@@ -3,7 +3,8 @@ import abc
 class Lookup(object):
     __metaclass__ = abc.ABCMeta
     
-    def __init__(self, name, scope):
+    def __init__(self, handler, name, scope):
+        self.handler = handler
         self.name = name
         self.scope = scope
     

@@ -1,3 +1,4 @@
+import hashlib
 import os
 import socket
 
@@ -12,11 +13,18 @@ SERVER_HOST = socket.gethostname()
 SERVER_INTERFACE = "0.0.0.0"
 SERVER_PORT = 9091
 
+#Database settings
+DATABASE_HOST = "localdev"
+DATABASE_NAME = "localdev_techresidents"
+DATABASE_USERNAME = "techresidents"
+DATABASE_PASSWORD = "techresidents"
+DATABASE_CONNECTION = "postgresql+psycopg2://%s:%s@/%s?host=%s" % (DATABASE_USERNAME, DATABASE_PASSWORD, DATABASE_NAME, DATABASE_HOST)
+
 #Zookeeper settings
 ZOOKEEPER_HOSTS = ["localdev:2181"]
 
 #Mongrel settings
-MONGREL_SENDER_ID = "lookupsvc_sender_id_default"
+MONGREL_SENDER_ID = "lookupsvc_" + hashlib.sha1(SERVER_HOST+str(SERVER_PORT)).hexdigest()
 MONGREL_PUB_ADDR = "tcp://localdev:9998"
 MONGREL_PULL_ADDR = "tcp://localdev:9999"
 
@@ -25,9 +33,6 @@ RIAK_HOST = "localdev"
 RIAK_PORT = 8087
 RIAK_SESSION_BUCKET = "tr_sessions"
 RIAK_SESSION_POOL_SIZE = 4
-
-#Chat settings
-CHAT_LONG_POLL_WAIT = 10
 
 #Logging settings
 LOGGING = {
