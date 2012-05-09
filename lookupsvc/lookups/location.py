@@ -39,6 +39,7 @@ class LocationLookup(Lookup):
             for location in session.query(Location):
                 location_json = {
                     "id": location.id,
+                    "city": location.city,
                     "country": location.country,
                     "state": location.state,
                     "zip": location.zip,
