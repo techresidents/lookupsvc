@@ -34,7 +34,8 @@ class LookupServiceHandler(TLookupService.Iface, GMongrel2Handler):
                 port=settings.SERVER_PORT,
                 version=version.VERSION,
                 build=version.BUILD,
-                zookeeper_hosts=settings.ZOOKEEPER_HOSTS)
+                zookeeper_hosts=settings.ZOOKEEPER_HOSTS,
+                database_connection=settings.DATABASE_CONNECTION)
         
         self.log = logging.getLogger("%s.%s" % (__name__, LookupServiceHandler.__name__))
 
@@ -56,7 +57,7 @@ class LookupServiceHandler(TLookupService.Iface, GMongrel2Handler):
         lookups = {}
         for scope, registration in LookupRegistry.registry.items():
             try:
-                lookups[scope] = registration.factory_method()
+                lookups[scope] = registration.factory_method(self)
                 self.log.info("%s created for scope %s." % (registration.name, scope))
             except Exception as error:
                 self.log.error("unable to create %s for scope %s." % (registration.name, scope))
@@ -105,6 +106,9 @@ class LookupServiceHandler(TLookupService.Iface, GMongrel2Handler):
             json_result["matches"].append(d)
 
         return json.dumps(json_result)
+    
+    def reinitialize(self, requestContext):
+        self._load_lookups()
 
     def lookup(self, requestContext, scope, category, value, maxResults):
         if scope in self.lookups:
