@@ -9,8 +9,8 @@ gevent-zeromq==0.2.2
 git+https://github.com/basho/riak-python-client.git@1.4.0#egg=riak
 
 git+ssh://dev.30and30.com/30and30/repos/techresidents/lib/python/zookeeper.git@3.3.5#egg=zookeeper
-git+ssh://dev.30and30.com/30and30/repos/techresidents/lib/python/trpycore.git@0.2.0#egg=trpycore
-git+ssh://dev.30and30.com/30and30/repos/techresidents/services/core/python/trsvcscore.git@0.2.0#egg=trsvcscore
+git+ssh://dev.30and30.com/30and30/repos/techresidents/lib/python/trpycore.git@0.3.0#egg=trpycore
+git+ssh://dev.30and30.com/30and30/repos/techresidents/services/core/python/trsvcscore.git@0.3.0#egg=trsvcscore
 
 http://nexus.dev.30and30.com/content/groups/public/com/techresidents/services/core/idl/idl-core-python/0.3.0/idl-core-python-0.3.0-bin.tar.gz#egg=tridlcore
 http://nexus.dev.30and30.com/content/groups/public/com/techresidents/services/lookupsvc/lookupsvc-idl-python/0.5-SNAPSHOT/lookupsvc-idl-python-0.5-SNAPSHOT-bin.tar.gz#egg=lookupsvc
