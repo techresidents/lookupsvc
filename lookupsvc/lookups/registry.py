@@ -9,11 +9,11 @@ class LookupRegistration(object):
 class LookupRegistry(object):
     registry = {}
     
-    @staticmethod 
-    def register(name, scope, factory_method):
+    @classmethod 
+    def register(cls, name, scope, factory_method):
         if scope not in LookupRegistry.registry:
             logging.info("Registering %s." % name) 
             registration = LookupRegistration(name, scope, factory_method)
-            LookupRegistry.registry[scope] = registration
+            cls.registry[scope] = registration
         else:
             logging.error("Unable to register %s - lookup already registered for scope %s." % (name, scope))

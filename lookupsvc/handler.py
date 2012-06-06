@@ -104,8 +104,9 @@ class LookupServiceHandler(TLookupService.Iface, GMongrel2Handler):
             d = { "id": result.id, "value": result.value }
             d.update(result.data)
             json_result["matches"].append(d)
-
-        return json.dumps(json_result)
+        
+        response = self.JsonResponse(data=json.dumps(json_result))
+        return response
     
     def reinitialize(self, requestContext):
         self._load_lookups()
