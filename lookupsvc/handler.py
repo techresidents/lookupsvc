@@ -93,7 +93,7 @@ class LookupServiceHandler(TLookupService.Iface, GMongrel2Handler):
                 LookupScope._NAMES_TO_VALUES[scope.upper()],
                 None,
                 query,
-                max_results)
+                int(max_results))
 
         json_result = {
                 "query": query,

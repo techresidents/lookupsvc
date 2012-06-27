@@ -1,19 +1,9 @@
-from sqlalchemy import Column, Integer, String
-from sqlalchemy.ext.declarative import declarative_base
-Base = declarative_base()
-
 from trpycore.datastruct.trie import Trie
+from trsvcscore.models import Technology
 from trlookupsvc.gen.ttypes import LookupScope, LookupResult
 
 from registry import LookupRegistry
 from lookups.base import Lookup
-
-class Technology(Base):
-    __tablename__ = "technology"
-    id = Column(Integer, primary_key=True)
-    name = Column(String(100))
-    description = Column(String(1024))
-    type_id = Column(Integer)
 
 class TechnologyLookup(Lookup):
     

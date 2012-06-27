@@ -1,23 +1,9 @@
-from sqlalchemy import Column, Integer, String
-from sqlalchemy.ext.declarative import declarative_base
-Base = declarative_base()
-
 from trpycore.datastruct.trie import Trie
+from trsvcscore.models import Location
 from trlookupsvc.gen.ttypes import LookupScope, LookupResult
 
 from registry import LookupRegistry
 from lookups.base import Lookup
-
-class Location(Base):
-    __tablename__ = "location"
-
-    id = Column(Integer, primary_key=True)
-    country = Column(String(100))
-    state = Column(String(100))
-    city = Column(String(100))
-    zip = Column(String(25))
-    county = Column(String(100))
-
 
 class LocationLookup(Lookup):
     
@@ -47,7 +33,7 @@ class LocationLookup(Lookup):
                     "name": "%s, %s %s" % (location.city, location.state, location.zip)
                 }
 
-                trie.insert(location.city.lower(), location_json)
+                #trie.insert(location.city.lower(), location_json)
                 trie.insert(location.zip.lower(), location_json)
                 trie.insert(location.state.lower(), location_json)
                 trie.insert(location_json["name"].lower(), location_json)
