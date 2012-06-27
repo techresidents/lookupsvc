@@ -1,2 +1,2 @@
-VERSION = "0.6-SNAPSHOT"
+VERSION = "0.6.0"
 BUILD = None
