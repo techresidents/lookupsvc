@@ -1,19 +1,9 @@
-from trpycore.datastruct.trie import Trie
+from trpycore.datastruct.trie import MultiTrie
+from trsvcscore.models import Tag
 from trlookupsvc.gen.ttypes import LookupScope, LookupResult
 
 from registry import LookupRegistry
 from lookups.base import Lookup
-
-TAGS = {
-    "a":      {"id": 0},
-    "abc":    {"id": 1},
-    "attic":  {"id": 2},
-    "at":     {"id": 3},
-    "are":    {"id": 4},
-    "and":    {"id": 5},
-    "bat":    {"id": 6},
-    "batter": {"id": 7},
-}
 
 class TagLookup(Lookup):
 
@@ -26,13 +16,27 @@ class TagLookup(Lookup):
                 handler,
                 TagLookup.__name__,
                 LookupScope.TAG)
-        self.trie = Trie()
+        self.trie = MultiTrie()
 
     def load(self):
-        trie = Trie()
-        for key, value in TAGS.items():
-            trie.insert(key.lower(), value)
-        self.trie = trie
+        try:
+            trie = MultiTrie()
+            session = self.handler.get_database_session()
+            for tag in session.query(Tag):
+                tag_json = {
+                    "id": tag.id,
+                    "conceptId": tag.concept_id,
+                    "name": tag.name,
+                }
+
+                for word in tag.name.lower().split():
+                    trie.insert(word, tag_json)
+
+            self.trie = trie
+
+        finally:
+            if session:
+                session.close()
 
     def lookup(self, value, category=None, max_results=None):
         result = []

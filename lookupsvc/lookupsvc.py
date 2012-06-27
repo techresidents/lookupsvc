@@ -32,10 +32,11 @@ class LookupService(GMongrel2Service):
  
 def main(argv):
     try:
+        #Configure logger
+        logging.config.dictConfig(settings.LOGGING)
+
         with pidfile(settings.SERVICE_PID_FILE, create_directory=True):
 
-            #Configure logger
-            logging.config.dictConfig(settings.LOGGING)
             
             #Create service
             service = LookupService()
