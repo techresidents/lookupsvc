@@ -14,5 +14,5 @@ then
     PYTHON="$DIR/../env/bin/python"
 fi
 
-. /opt/30and30/etc/profile
-$PYTHON $DIR/../manager.py --env $1 restart --user thirty --group thirty
+. /opt/tr/etc/profile
+$PYTHON $DIR/../manager.py --env $1 restart --user tr --group tr

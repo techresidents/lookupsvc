@@ -5,18 +5,18 @@
 
 #Non-template defines
 %define app_buildroot $RPM_BUILD_ROOT/%{__prefix}/%{name}-%{version}/%{name}
-%define __prefix /opt/30and30/services/lookupsvc/install
+%define __prefix /opt/tr/services/lookupsvc/install
 %define app_installroot %{__prefix}/%{name}-%{version}/%{name}
 
-Summary: 30and30 Service 
+Summary: Tech Residents Service 
 Name: %{name}
 Version: %{version}
 Release: %{release}
 Source0: %{name}-%{version}.tar.gz
 BuildRoot: %{_topdir}/tmp/%{name}-%{version}-buildroot
-Group: 30and30
-Packager: 30and30
-License: 30and30
+Group: tr
+Packager: Tech Residents
+License: Tech Resdients
 
 
 %description 
@@ -68,6 +68,6 @@ done
 rm -rf $RPM_BUILD_ROOT
 
 %files
-%defattr(-, thirty, thirty)
+%defattr(-, tr, tr)
 /%{__prefix}/*
 

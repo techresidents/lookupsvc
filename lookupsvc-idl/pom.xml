@@ -18,9 +18,9 @@
     <inceptionYear>2012</inceptionYear>
 
     <scm>
-        <connection>scm:git:git://dev.30and30.com/30and30/repos/techresidents/services/lookupsvc.git</connection>
-        <developerConnection>scm:git:git://dev.30and30.com/30and30/repos/techresidents/services/lookupsvc.git</developerConnection>
-        <url>scm:git:git://dev.30and30.com/30and30/repos/techresidents/services/lookupsvc.git</url>
+        <connection>scm:git:git://dev.techresidents.com/tr/repos/techresidents/services/lookupsvc.git</connection>
+        <developerConnection>scm:git:git://dev.techresidents.com/tr/repos/techresidents/services/lookupsvc.git</developerConnection>
+        <url>scm:git:git://dev.techresidents.com/tr/repos/techresidents/services/lookupsvc.git</url>
     </scm>
 
     <profiles>
