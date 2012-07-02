@@ -126,7 +126,7 @@ restartCommandHandler.examples = """Examples:
 def main(argv):
 
     def parse_arguments():
-        parser = argparse.ArgumentParser(description="manager.py controls 30and30 services")
+        parser = argparse.ArgumentParser(description="manager.py controls Tech Residents services")
         parser.add_argument("-e", "--env", help="service environment")
 
         commandParsers = parser.add_subparsers()

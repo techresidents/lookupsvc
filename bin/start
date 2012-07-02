@@ -16,5 +16,5 @@ fi
 
 echo $PYTHON
 
-. /opt/30and30/etc/profile
-$PYTHON $DIR/../manager.py --env $1 start --user thirty --group thirty
+. /opt/tr/etc/profile
+$PYTHON $DIR/../manager.py --env $1 start --user tr --group tr

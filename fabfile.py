@@ -15,8 +15,8 @@ import version
 env.project = os.path.basename(os.path.dirname(__file__))
 env.project_dir = os.path.dirname(__file__)
 env.project_version =  version.VERSION
-env.project_user = "thirty"
-env.project_group = "thirty"
+env.project_user = "tr"
+env.project_group = "tr"
 
 
 
@@ -25,35 +25,35 @@ def localdev():
 
     env.hosts = ["localdev"]
     env.project_environment="localdev"
-    env.project_install_root="/opt/30and30/services/%s/install" % (env.project)
-    env.project_deploy_root="/opt/30and30/services/%s/%s" % (env.project, env.project_environment)
+    env.project_install_root="/opt/tr/services/%s/install" % (env.project)
+    env.project_deploy_root="/opt/tr/services/%s/%s" % (env.project, env.project_environment)
 
     #Add additional convenience root for localdev deploy
-    env.project_localdev_deploy_root="/opt/30and30/services/localdev.com/%s" % env.project_environment
+    env.project_localdev_deploy_root="/opt/tr/services/localdev.com/%s" % env.project_environment
 
 def integration():
     """Configure environment for integration """
 
-    env.hosts = ["dev.30and30.com"]
+    env.hosts = ["dev.techresidents.com.com"]
     env.project_environment="integration"
-    env.project_install_root="/opt/30and30/services/%s/install" % (env.project)
-    env.project_deploy_root="/opt/30and30/services/%s/%s" % (env.project, env.project_environment)
+    env.project_install_root="/opt/tr/services/%s/install" % (env.project)
+    env.project_deploy_root="/opt/tr/services/%s/%s" % (env.project, env.project_environment)
 
 def staging():
     """Configure environment for staging """
 
-    env.hosts = ["dev.30and30.com"]
+    env.hosts = ["dev.techresidents.com.com"]
     env.project_environment="staging"
-    env.project_install_root="/opt/30and30/services/%s/install" % (env.project)
-    env.project_deploy_root="/opt/30and30/services/%s/%s" % (env.project, env.project_environment)
+    env.project_install_root="/opt/tr/services/%s/install" % (env.project)
+    env.project_deploy_root="/opt/tr/services/%s/%s" % (env.project, env.project_environment)
 
 def prod():
     """Configure environment for staging """
 
-    env.hosts = ["dev.30and30.com"]
+    env.hosts = ["dev.techresidents.com.com"]
     env.project_environment="prod"
-    env.project_install_root="/opt/30and30/services/%s/install" % (env.project)
-    env.project_deploy_root="/opt/30and30/services/%s/%s" % (env.project, env.project_environment)
+    env.project_install_root="/opt/tr/services/%s/install" % (env.project)
+    env.project_deploy_root="/opt/tr/services/%s/%s" % (env.project, env.project_environment)
 
 
 
@@ -80,7 +80,7 @@ def _create_app_tarball(tag="HEAD", release="1", arch="x86_64"):
             local("tar -C %s -cLzf %s %s" % (tempdir_name, tarball, versioned_project))
 
     else:
-        #git archive --format=tar --prefix=techresidents_web-0.1/thirty_web/ HEAD |gzip > thirty_web-0.1.tar.gz
+        #git archive --format=tar --prefix=techresidents_web-0.1/techresidents_web/ HEAD |gzip > techresidents_web-0.1.tar.gz
         local("git archive --format=tar --prefix={0}-{1}/{0}/ {2} |gzip > {3}".format(env.project, env.project_version, tag, tarball))
 
         #Check that the version in the local version.py matches the archive

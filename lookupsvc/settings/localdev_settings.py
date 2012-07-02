@@ -6,7 +6,7 @@ from default_settings import *
 ENV = "localdev"
 
 #Service Settings
-SERVICE_PID_FILE = "/opt/30and30/data/%s/pid/%s.%s.pid" % (SERVICE, SERVICE, ENV)
+SERVICE_PID_FILE = "/opt/tr/data/%s/pid/%s.%s.pid" % (SERVICE, SERVICE, ENV)
 
 #Server settings
 SERVER_HOST = socket.gethostname()
@@ -61,7 +61,7 @@ LOGGING = {
             "level": "DEBUG",
             "class": "logging.handlers.TimedRotatingFileHandler",
             "formatter": "long_formatter",
-            "filename": "/opt/30and30/data/%s/logs/%s.%s.log" % (SERVICE, SERVICE, ENV),
+            "filename": "/opt/tr/data/%s/logs/%s.%s.log" % (SERVICE, SERVICE, ENV),
             "when": "midnight",
             "interval": 1,
             "backupCount": 7

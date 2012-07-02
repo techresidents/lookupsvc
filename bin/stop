@@ -14,5 +14,5 @@ then
     PYTHON="$DIR/../env/bin/python"
 fi
 
-. /opt/30and30/etc/profile
+. /opt/tr/etc/profile
 $PYTHON $DIR/../manager.py --env $1 stop
