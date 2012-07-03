@@ -34,10 +34,9 @@ def main(argv):
         
         if platform.system() == 'Darwin':
             os.putenv("CFLAGS", "-I/opt/local/include")
-            os.putenv("ZMQ_DIR", "/opt/local")
         else:
-            os.putenv("CFLAGS", "-I/opt/3ps/include")
-            os.putenv("ZMQ_DIR", "/opt/3ps")
+            os.putenv("CFLAGS", "-I/opt/3ps/include -L/opt/3ps/lib64 -L/opt/3ps/lib")
+            os.putenv("LIBRARY_PATH", "$LIBRARY_PATH:/opt/3ps/lib64:/opt/3ps/lib")
 
         subprocess.call(["pip", "install", "--requirement", args.requirements])
 
