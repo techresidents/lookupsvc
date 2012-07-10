@@ -22,7 +22,11 @@ class LocationLookup(Lookup):
         try:
             trie = Trie()
             session = self.handler.get_database_session()
-            for location in session.query(Location):
+
+            for location in session.query(Location).\
+                filter(Location.state != None).\
+                filter(Location.city == None):
+
                 location_json = {
                     "id": location.id,
                     "city": location.city,
@@ -30,13 +34,24 @@ class LocationLookup(Lookup):
                     "state": location.state,
                     "zip": location.zip,
                     "county": location.county,
-                    "name": "%s, %s %s" % (location.city, location.state, location.zip)
+                    "name": "%s" % (location.state)
                 }
-
-                #trie.insert(location.city.lower(), location_json)
-                trie.insert(location.zip.lower(), location_json)
                 trie.insert(location.state.lower(), location_json)
+
+            for location in session.query(Location).\
+                filter(Location.city != None).\
+                filter(Location.zip == None):
+                location_json = {
+                    "id": location.id,
+                    "city": location.city,
+                    "country": location.country,
+                    "state": location.state,
+                    "zip": location.zip,
+                    "county": location.county,
+                    "name": "%s, %s" % (location.city, location.state)
+                }
                 trie.insert(location_json["name"].lower(), location_json)
+
             self.trie = trie
         finally:
             if session:
