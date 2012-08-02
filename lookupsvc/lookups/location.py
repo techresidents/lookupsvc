@@ -28,13 +28,13 @@ class LocationLookup(Lookup):
                 filter(Location.city == None):
 
                 location_json = {
-                    "id": location.id,
-                    "city": location.city,
-                    "country": location.country,
-                    "state": location.state,
-                    "zip": location.zip,
-                    "county": location.county,
-                    "name": "%s" % (location.state)
+                    "id": str(location.id),
+                    "city": location.city or '',
+                    "country": location.country or '',
+                    "state": location.state or '',
+                    "zip": location.zip or '',
+                    "county": location.county or '',
+                    "name": "%s" % (location.state or '')
                 }
                 trie.insert(location.state.lower(), location_json)
 
@@ -42,13 +42,13 @@ class LocationLookup(Lookup):
                 filter(Location.city != None).\
                 filter(Location.zip == None):
                 location_json = {
-                    "id": location.id,
-                    "city": location.city,
-                    "country": location.country,
-                    "state": location.state,
-                    "zip": location.zip,
-                    "county": location.county,
-                    "name": "%s, %s" % (location.city, location.state)
+                    "id": str(location.id),
+                    "city": location.city or '',
+                    "country": location.country or '',
+                    "state": location.state or '',
+                    "zip": location.zip or '',
+                    "county": location.county or '',
+                    "name": "%s, %s" % (location.city or '', location.state or '')
                 }
                 trie.insert(location_json["name"].lower(), location_json)
 
@@ -61,7 +61,7 @@ class LocationLookup(Lookup):
         result = []
         for value, data in self.trie.find(value.lower(), max_results):
             lookup_result = LookupResult(
-                    id=data["id"],
+                    id=int(data["id"]),
                     value=value,
                     data=data)
             result.append(lookup_result)

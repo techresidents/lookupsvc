@@ -24,8 +24,8 @@ class TagLookup(Lookup):
             session = self.handler.get_database_session()
             for tag in session.query(Tag):
                 tag_json = {
-                    "id": tag.id,
-                    "conceptId": tag.concept_id,
+                    "id": str(tag.id),
+                    "conceptId": str(tag.concept_id),
                     "name": tag.name,
                 }
 
@@ -42,7 +42,7 @@ class TagLookup(Lookup):
         result = []
         for value, data in self.trie.find(value.lower(), max_results):
             lookup_result = LookupResult(
-                    id=data["id"],
+                    id=int(data["id"]),
                     value=value,
                     data=data) 
 

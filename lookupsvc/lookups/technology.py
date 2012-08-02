@@ -24,10 +24,10 @@ class TechnologyLookup(Lookup):
             session = self.handler.get_database_session()
             for technology in session.query(Technology):
                 technology_json = {
-                    "id": technology.id,
-                    "name": technology.name,
-                    "description": technology.description,
-                    "type_id": technology.type_id
+                    "id": str(technology.id),
+                    "name": technology.name or '',
+                    "description": technology.description or '',
+                    "type_id": str(technology.type_id)
                 }
                 trie.insert(technology.name.lower(), technology_json)
             self.trie = trie
@@ -39,7 +39,7 @@ class TechnologyLookup(Lookup):
         result = []
         for value, data in self.trie.find(value.lower(), max_results):
             lookup_result = LookupResult(
-                    id=data["id"],
+                    id=int(data["id"]),
                     value=value,
                     data=data)
             result.append(lookup_result)
