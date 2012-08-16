@@ -1,8 +1,8 @@
 from trpycore.datastruct.trie import Trie
-from trsvcscore.models import Location
+from trsvcscore.db.models import Location
 from trlookupsvc.gen.ttypes import LookupScope, LookupResult
 
-from registry import LookupRegistry
+from lookups.registry import LookupRegistry
 from lookups.base import Lookup
 
 class LocationLookup(Lookup):

@@ -1,8 +1,8 @@
 from trpycore.datastruct.trie import MultiTrie
-from trsvcscore.models import Tag
+from trsvcscore.db.models import Tag
 from trlookupsvc.gen.ttypes import LookupScope, LookupResult
 
-from registry import LookupRegistry
+from lookups.registry import LookupRegistry
 from lookups.base import Lookup
 
 class TagLookup(Lookup):
@@ -28,9 +28,13 @@ class TagLookup(Lookup):
                     "conceptId": str(tag.concept_id),
                     "name": tag.name,
                 }
-
-                for word in tag.name.lower().split():
-                    trie.insert(word, tag_json)
+                
+                trie.insert(tag.name.lower(), tag_json)
+                
+                words = tag.name.lower().split()
+                if len(words) > 1:
+                    for word in words:
+                        trie.insert(word, tag_json)
 
             self.trie = trie
 
@@ -40,13 +44,19 @@ class TagLookup(Lookup):
 
     def lookup(self, value, category=None, max_results=None):
         result = []
+        result_ids = {}
         for value, data in self.trie.find(value.lower(), max_results):
+            tag_id = int(data["id"])
             lookup_result = LookupResult(
-                    id=int(data["id"]),
+                    id=tag_id,
                     value=value,
                     data=data) 
+            
+            #prevent duplicates
+            if tag_id not in result_ids:
+                result.append(lookup_result)
+                result_ids[tag_id] = True
 
-            result.append(lookup_result)
         return result
 
 LookupRegistry.register(TagLookup.__name__, LookupScope.TAG, TagLookup.create)
