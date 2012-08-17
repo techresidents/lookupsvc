@@ -4,7 +4,6 @@ import logging
 import logging.config
 import os
 import signal
-import socket
 import sys
 import gevent
 
