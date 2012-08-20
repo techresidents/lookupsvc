@@ -34,7 +34,7 @@ def localdev():
 def integration():
     """Configure environment for integration """
 
-    env.hosts = ["dev.techresidents.com.com"]
+    env.hosts = ["dev.techresidents.com"]
     env.project_environment="integration"
     env.project_install_root="/opt/tr/services/%s/install" % (env.project)
     env.project_deploy_root="/opt/tr/services/%s/%s" % (env.project, env.project_environment)
@@ -42,7 +42,7 @@ def integration():
 def staging():
     """Configure environment for staging """
 
-    env.hosts = ["dev.techresidents.com.com"]
+    env.hosts = ["dev.techresidents.com"]
     env.project_environment="staging"
     env.project_install_root="/opt/tr/services/%s/install" % (env.project)
     env.project_deploy_root="/opt/tr/services/%s/%s" % (env.project, env.project_environment)
@@ -50,7 +50,7 @@ def staging():
 def prod():
     """Configure environment for staging """
 
-    env.hosts = ["dev.techresidents.com.com"]
+    env.hosts = ["dev.techresidents.com"]
     env.project_environment="prod"
     env.project_install_root="/opt/tr/services/%s/install" % (env.project)
     env.project_deploy_root="/opt/tr/services/%s/%s" % (env.project, env.project_environment)
