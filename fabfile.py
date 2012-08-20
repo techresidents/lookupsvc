@@ -1,4 +1,6 @@
+import glob
 import os 
+import re
 import shutil
 import sys
 import tempfile
@@ -80,7 +82,7 @@ def _create_app_tarball(tag="HEAD", release="1", arch="x86_64"):
             local("tar -C %s -cLzf %s %s" % (tempdir_name, tarball, versioned_project))
 
     else:
-        #git archive --format=tar --prefix=techresidents_web-0.1/techresidents_web/ HEAD |gzip > techresidents_web-0.1.tar.gz
+        #git archive --format=tar --prefix=techresidents_web-0.1/techresidents_web/ HEAD |gzip > techresidents__web-0.1.tar.gz
         local("git archive --format=tar --prefix={0}-{1}/{0}/ {2} |gzip > {3}".format(env.project, env.project_version, tag, tarball))
 
         #Check that the version in the local version.py matches the archive
@@ -101,6 +103,19 @@ def _create_app_tarball(tag="HEAD", release="1", arch="x86_64"):
     
     return tarball
 
+def _file_replace(fileglob, pattern, replacement, count=0, flags=re.DOTALL, expected_substitutions=1):
+    """Helper to replace a pattern in a file."""
+    for filename in glob.glob(fileglob):
+        with open(filename, 'r') as f:
+            data = f.read()
+        
+        result, substitutions = re.subn(pattern, replacement, data, count, flags)
+        if substitutions != expected_substitutions:
+            raise RuntimeError("number of substitutions (%d) != expected substitutions (%d)"\
+                    % (substitutions, expected_substitutions))
+
+        with open(filename, 'w') as f:
+            f.write(result)
 
 def build_rpm(tag="HEAD", release="1", arch="x86_64"):
     """Build and package application for release in an rpm.
@@ -119,7 +134,7 @@ def build_rpm(tag="HEAD", release="1", arch="x86_64"):
     """
 
     if len(env.hosts) != 1:
-        raise RuntimeError("build_rpm must be run exactly 1 remote machine")
+        raise RuntimeError("build_rpm must be run on exactly 1 remote machine")
 
     tarball = _create_app_tarball(tag, release, arch)
 
@@ -207,3 +222,104 @@ def uninstall(version):
 
     with settings(user="root"):
         run("rpm -ev %s-%s" % (env.project, version))
+
+
+def bump_version(current_version, new_version):
+    info = {
+        "service": env.project,
+        "current_version": current_version,
+        "new_version": new_version
+    }
+
+    _file_replace(
+            fileglob="version.py",
+            pattern=r"{current_version}".format(**info),
+            replacement=r"{new_version}".format(**info))
+    
+    _file_replace(
+            fileglob="{service}-idl/pom.xml".format(**info),
+            pattern=r"<artifactId>{service}-idl</artifactId>(.*)<version>{current_version}</version>".format(**info),
+            replacement=r"<artifactId>{service}-idl</artifactId>\1<version>{new_version}</version>".format(**info))
+
+    _file_replace(
+            fileglob="{service}-idl/*/pom.xml".format(**info),
+            pattern=r"<parent>(.*){current_version}(.*)</parent>".format(**info),
+            replacement=r"<parent>\g<1>{new_version}\g<2></parent>".format(**info))
+
+    _file_replace(
+            fileglob="requirements/requirements.txt",
+            pattern=r"{service}-idl-python/{current_version}/{service}-idl-python-{current_version}-bin.tar.gz".format(**info),
+            replacement=r"{service}-idl-python/{new_version}/{service}-idl-python-{new_version}-bin.tar.gz".format(**info))
+
+def release(new_version, new_snapshot_version, current_version=None):
+    """Cut release"""
+
+    if len(env.hosts) != 1:
+        raise RuntimeError("release must be run on exactly 1 remote machine")
+
+    new_major_version = new_version.rsplit('.', 1)[0]
+
+    info = {
+        "service": env.project,
+        "current_version": current_version or "%s-SNAPSHOT" % new_major_version,
+        "new_version": new_version,
+        "new_major_version": new_major_version,
+        "new_snapshot_version": new_snapshot_version,
+        "release_branch": "release-%s" % new_major_version
+    }
+
+    answer = prompt("Releasing with the following parameters\n\n%s\n\nContinue with release?" % info, default="n")
+    if answer not in ["Y", "y", "Yes", "YES"]:
+        return
+
+    #pull the latest
+    local("git checkout master")
+    local("git pull")
+    local("git checkout integration")
+    local("git pull")
+
+    #create and checkout release branch
+    local("git checkout integration")
+    local("git branch {release_branch}".format(**info))
+    local("git push origin {release_branch}".format(**info))
+    local("git branch --set-upstream {release_branch} origin/{release_branch}".format(**info))
+    local("git checkout {release_branch}".format(**info))
+
+    #bump release branch versions
+    bump_version(info["current_version"], info["new_version"])
+
+    #deploy idl to nexus
+    with lcd("{service}-idl".format(**info)):
+        local("mvn clean deploy")
+
+    #commit changes to release branch and push 
+    local("git commit -a -m 'Bumping version to {new_version}'".format(**info))
+    local("git push")
+
+    #build rpm
+    build_rpm()
+    
+    #Checkout master and merge release
+    local("git checkout master")
+    local("git branch --no-merged")
+    local("git merge --no-ff {release_branch}".format(**info))
+    local("git tag -a {new_version} -m 'Release {new_version}'".format(**info))
+    local("git push --all")
+    local("git push --tags")
+    local("git branch --no-merged")
+
+    #Checkout integration branch and merge release
+    local("git checkout integration")
+    local("git branch --no-merged")
+    local("git merge --no-ff {release_branch}".format(**info))
+    local("git branch --no-merged")
+
+    #bump release branch versions
+    bump_version(info["new_version"], info["new_snapshot_version"])
+
+    #deploy idl to nexus
+    with lcd("{service}-idl".format(**info)):
+        local("mvn clean deploy")
+
+    local("git commit -a -m 'Bumping version to {new_snapshot_version}'".format(**info))
+    local("git push")
