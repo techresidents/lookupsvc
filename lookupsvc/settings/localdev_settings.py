@@ -6,12 +6,15 @@ from default_settings import *
 ENV = "localdev"
 
 #Service Settings
+SERVICE = "lookupsvc"
 SERVICE_PID_FILE = "/opt/tr/data/%s/pid/%s.%s.pid" % (SERVICE, SERVICE, ENV)
+SERVICE_HOSTNAME = socket.gethostname()
+SERVICE_FQDN = socket.gethostname()
 
-#Server settings
-SERVER_HOST = socket.gethostname()
-SERVER_INTERFACE = "0.0.0.0"
-SERVER_PORT = 9091
+#Thrift Server settings
+THRIFT_SERVER_ADDRESS = socket.gethostname()
+THRIFT_SERVER_INTERFACE = "0.0.0.0"
+THRIFT_SERVER_PORT = 9091
 
 #Database settings
 DATABASE_HOST = "localhost"
@@ -24,7 +27,7 @@ DATABASE_CONNECTION = "postgresql+psycopg2://%s:%s@/%s?host=%s" % (DATABASE_USER
 ZOOKEEPER_HOSTS = ["localhost:2181"]
 
 #Mongrel settings
-MONGREL_SENDER_ID = "lookupsvc_" + hashlib.sha1(SERVER_HOST+str(SERVER_PORT)).hexdigest()
+MONGREL_SENDER_ID = "lookupsvc_" + hashlib.md5(THRIFT_SERVER_HOST+str(THRIFT_SERVER_PORT)).hexdigest()
 MONGREL_PUB_ADDR = "tcp://localhost:9998"
 MONGREL_PULL_ADDR = "tcp://localhost:9999"
 
