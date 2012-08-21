@@ -27,7 +27,7 @@ DATABASE_CONNECTION = "postgresql+psycopg2://%s:%s@/%s?host=%s" % (DATABASE_USER
 ZOOKEEPER_HOSTS = ["localhost:2181"]
 
 #Mongrel settings
-MONGREL_SENDER_ID = "lookupsvc_" + hashlib.md5(THRIFT_SERVER_HOST+str(THRIFT_SERVER_PORT)).hexdigest()
+MONGREL_SENDER_ID = "lookupsvc_" + hashlib.md5(THRIFT_SERVER_ADDRESS+str(THRIFT_SERVER_PORT)).hexdigest()
 MONGREL_PUB_ADDR = "tcp://localhost:9998"
 MONGREL_PULL_ADDR = "tcp://localhost:9999"
 
