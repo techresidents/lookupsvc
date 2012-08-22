@@ -113,8 +113,9 @@ class LookupMongrel2Handler(GMongrel2Handler):
         }
 
         for result in results:
-            d = { "id": result.id, "value": result.value }
+            d = {}
             d.update(result.data)
+            d.update({ "id": result.id, "value": result.value })
             json_result["matches"].append(d)
         
         response = self.JsonResponse(data=json.dumps(json_result))
